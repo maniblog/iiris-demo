@@ -1,0 +1,512 @@
+/* Extra Small Devices (Phones) */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .navbar-logo img {width: 80px;}
+  .navbar-toggler-icon { background-size: 80%;}
+  .navbar-toggler { padding: 0 5px;  border: none;}
+  .navbar-toggler:focus { box-shadow:none;}
+  .carousel-caption h1 {font-size: 21px !important; line-height: 27px;}
+  .carousel-caption p {font-size: 12px;}
+  .carousel { height: 400px;}
+  .carousel-inner { height: 400px;}  
+  .carousel-item { height: 400px;min-height: 400px;}
+  .carousel-caption p {display: none;}
+  .carousel-caption a { font-size: 12px; padding: 12px 23px;  width: 70%;  margin-bottom: 10px; min-width: 70%; margin-right: 0;}
+  .custom-indicators {position: absolute; left: 0;}
+  .IntelligencePart {margin-top: 0;}
+  .IntelligenceCanvaPart {width: 100%;position: relative;top: -70px;left: 5px;}
+  .circle-wrapper {width: 360px;height: 360px; margin-bottom: -70px;position: relative;left: -37px;}  
+  .wheel-item:nth-child(2) {width: 80px; height: 80px; top: 85px; left: 175px; rotate: 303deg;}   
+  .wheel-item:nth-child(3) {width: 80px; height: 80px; top: 141px; right: 74px; rotate: 1deg;} 
+  .wheel-item:nth-child(4) {width: 80px; height: 80px; bottom: 85px; right: 107px; rotate: 60deg;} 
+  .wheel-item:nth-child(5) {width: 80px; height: 80px; bottom: 86px; left: 107px; rotate: 124deg;} 
+  .wheel-item:nth-child(6) {width: 80px; height: 80px; bottom: 142px; left: 76px; rotate: 182deg;} 
+  .wheel-item:nth-child(7) {width: 80px; height: 80px; top: 84px; left: 109px; rotate: 241deg;}  
+  .wheel-item:nth-child(2).active {width: 100px; height: 100px; top: 68px; left: 168px; rotate: 302deg;} 
+  .wheel-item:nth-child(2).active img { width: 34px; top: 44%; left: 32%;}    
+  .wheel-item:nth-child(3).active {width: 100px; height: 100px; top: 131px; right: 59px; rotate: 1deg;}  
+  .wheel-item:nth-child(3).active img { width: 34px; top: 44%; left: 32%;}   
+  .wheel-item:nth-child(4).active {width: 100px; height: 100px; bottom: 68px; right: 97px; rotate: 62deg;}  
+  .wheel-item:nth-child(4).active img { width: 34px; top: 30%; left: 47%;} 
+  .wheel-item:nth-child(5).active {width: 100px; height: 100px; bottom: 70px; left: 93px; rotate: 122deg;} 
+  .wheel-item:nth-child(5).active img { width: 34px; top: 38%; left: 47%;}  
+  .wheel-item:nth-child(6).active {width: 100px; height: 100px; bottom: 134px; left: 60px; rotate: 182deg;} 
+  .wheel-item:nth-child(6).active img { width: 34px; top:21%; left: 37%;}  
+  .wheel-item:nth-child(7).active {width: 100px; height: 100px; top: 68px; left: 99px; rotate: 242deg;}
+  .wheel-item:nth-child(7).active img { width: 34px; top:24%; left: 32%;} 
+  .wheel-item img {width: 26px; top: 32%; left: 37%;}
+  .center-eye {width: 80px; height: 80px;}
+  .center-eye img {width: 40px;}
+  .wheel-item span {top: 50%; left: 120%; padding: 4px 8px; border-radius: 5px;font-size: 11px;font-weight: 500; box-shadow: 0 1px 10px rgba(0, 0, 0, .12);}
+  .Evidence:hover span {left: 35%;top: 0%;}
+  .De-risk_Security:hover span {left: 58%;rotate: -124deg !important;top: 12px;}
+  .Embeds:hover span {left: 64px;rotate: 179deg !important;top: 30px;width: 62px;}
+  .Response:hover span { left: 49px;rotate: 120deg !important;top: 7px; width: 71px;}
+  .IntelligenceContentPart {top: -40px;width: 100%;text-align: center;}
+  .section-subtitle {font-size: 12px;}
+  .sideTitlePart {font-size: 18px !important;}
+  .sideTitlePart-desc {font-size: 13px !important;line-height: 19px !important;}
+  .content-box { text-align: left;}
+  .content-box h3 {font-size: 18px;}
+  .content-box p {font-size: 13px;line-height: 21px;margin-bottom: 0 !important;}
+  .iiris-trust-bar {margin-top: 0;}
+  .accordianItemCustom button {padding: 3px 0; font-size: 13px;}
+  .learn-more{font-size: 13px;}
+  .accordianPart {margin-top: 10px !important;}
+  .accordianPart h3 {margin-bottom: 10px !important;}
+  .content-box_tab a {line-height: 25px; font-size: 13px;}
+  .content-box_tab {padding: 0;}
+  .main-title {font-size: 18px;}
+  .main-desc {font-size: 13px;line-height: 20px; padding: 0; margin-bottom: 15px;} 
+  .riskImage_riskPart {display: none;}
+  .riskBtnWrap_riskPart a {max-width: 66%;margin: 0 auto;}
+  .footer-logo {max-width: 100px;}
+  .brand-title {font-size: 18px;}
+  .brand-text {line-height: 22px;font-size: 13px;}
+  .footer-links a {font-size: 13px;}
+  .newsletter-icon {width: 52px;height: 52px;}
+  .newsletter-card h3 {font-size: 18px;}
+  .newsletter-card p {font-size: 13px;}
+  .contact-item strong {font-weight: 300;}
+  .footer-bottom p {font-size: 13px;}
+  .bottom-links a {font-size: 13px;}
+  .contact-item svg { width: 18px;height: 18px;}
+  .stats-parallax {margin-top: 0px;}
+
+  .about-content {text-align: center;}
+  .premium-card h4 {font-size: 16px;}
+  .about-text { font-size: 14px !important;}
+  .reports-header{text-align: center;}
+  .reports-header > div {text-align: center;width: 100%;}
+  .reports-title { font-size: 18px;}
+  .reports-header a {justify-content: center; width: 100%;}
+  .report-body h5 {font-size: 16px;}
+  .report-body p {font-size: 14px;}
+  .globalPresence_new01 {padding: 0px 0;}
+  .map_header_new01 {padding: 20px;}
+  .map_header_new01 h3 { font-size: 18px;}
+  .mapHolder_new01 { max-width: 100%; height: auto;}
+  .mapWrapper_new01 {overflow-x: inherit;}
+  .legend_new01 {margin-top: 10px;}
+  .cert_header_new01 h3 {font-size: 16px;}
+  .mediaHub_new01 span {text-align: center;}  
+  .mediaHub_new01 h2 {text-align: center;} 
+  .mediaHub_new01 p {text-align: center;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
+  .storyOverlay_new01 h3 {font-size: 17px;}
+  .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
+  .mediaHub_new01 a {max-width: 100%;}
+  .viewAllCard_new01 { height: 200px;}
+  .awardContent_new01 h3 { font-size: 16px;}
+  .awardContent_new01 p {font-size: 14px; line-height: 23px;}
+  .awardSection_new01 {padding: 30px 0;}
+  .contactSection_new01 {padding: 30px 0;}
+  .contactContent_new01 h2 {font-size: 18px;}
+  .contactContent_new01 p {font-size: 14px;}
+  .featureItem_new01 {justify-content: flex-start;}
+  .contactFeature_new01 h5, p{text-align: left;} 
+  .formHeader_new01 h3 {font-size: 18px;}
+  .riskStats_riskPart p {text-align: center;}
+  
+  .search-container {width: 90%; margin: 60px auto;}
+  .search-box input{font-size: 14px;}
+  .search-box button {width: 30px;height: 30px;}
+  .search-box svg {width: 15px; height: 15px;}
+  .close-search {top: 0;right: 14px;}
+  .close-search svg {width: 25px; height: 25px;}
+  .navbar-nav {align-items: flex-start !important;margin-top: 20px;}
+  .nav-link {padding: 0 !important;}
+  .navbar-right {margin-left: 0;}  
+  
+  .viewAllCard_new01 a {width: 70%;}
+  .riskHeroSection_riskPart {padding: 20px 0; text-align: center;}
+  .devidePart_line {margin: 0 auto; margin-bottom: 10px;}
+  .riskText_riskPart { font-size: 14px;  text-align: center;  }
+  .awardSection_new01::after {width: 0;height: 0;}
+
+}
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .navbar-logo img {width: 80px;}
+  .navbar-toggler-icon { background-size: 80%;}
+  .navbar-toggler { padding: 0 5px;  border: none;}
+  .navbar-toggler:focus { box-shadow:none;}
+  .carousel-caption h1 {font-size: 21px !important; line-height: 27px;}
+  .carousel-caption p {font-size: 12px;}
+  .carousel { height: 400px;}
+  .carousel-inner { height: 400px;}  
+  .carousel-item { height: 400px;min-height: 400px;}
+  .carousel-caption p {display: none;}
+  .carousel-caption a { font-size: 12px; padding: 12px 23px;  width: 70%;  margin-bottom: 10px; min-width: 70%; margin-right: 0;}
+  .custom-indicators {position: absolute; left: 0;}
+  .IntelligencePart {margin-top: 0;}
+  .IntelligenceCanvaPart {width: 100%;position: relative;top: -70px; left: 15px;}
+
+  .circle-wrapper {width: 400px;height: 400px; margin-bottom: -70px;position: relative;left: -30px;}  
+
+  .wheel-item:nth-child(2) {width: 115px; height: 115px; top: 68px; left: 195px; rotate: 306deg;}   
+  .wheel-item:nth-child(3) {width: 115px; height: 115px; top: 150px; right: 53px; rotate: 5deg;} 
+  .wheel-item:nth-child(4) {width: 115px; height: 115px; bottom: 62px; right: 103px; rotate: 64deg;} 
+  .wheel-item:nth-child(5) {width: 115px; height: 115px; bottom: 68px; left: 92px; rotate: 124deg;} 
+  .wheel-item:nth-child(6) {width: 115px; height: 115px; bottom: 148px; left: 53px; rotate: 185deg;} 
+  .wheel-item:nth-child(7) {width: 115px; height: 115px; top: 61px; left: 104px; rotate: 245deg;}
+  
+  .wheel-item:nth-child(2).active {width: 130px; height: 130px; top: 56px; left: 190px; rotate: 306deg;} 
+  .wheel-item:nth-child(2).active img { width: 48px; top: 41%; left: 32%;}
+    
+  .wheel-item:nth-child(3).active {width: 130px; height: 130px; top: 143px; right: 40px; rotate: 4deg;}  
+  .wheel-item:nth-child(3).active img { width: 48px; top: 44%; left: 32%;}   
+
+  .wheel-item:nth-child(4).active {width: 130px; height: 130px; bottom: 49px; right: 95px; rotate: 66deg;}  
+  .wheel-item:nth-child(4).active img { width: 48px; top: 30%; left: 47%;}    
+   
+  .wheel-item:nth-child(5).active {width: 130px; height: 130px; bottom: 57px; left: 81px; rotate: 125deg;} 
+  .wheel-item:nth-child(5).active img { width: 48px; top: 38%; left: 47%;}    
+
+  .wheel-item:nth-child(6).active {width: 130px; height: 130px; bottom: 143px; left: 40px; rotate: 186deg;} 
+  .wheel-item:nth-child(6).active img { width: 48px; top:21%; left: 37%;}   
+  
+  .wheel-item:nth-child(7).active {width: 130px; height: 130px; top: 49px; left: 95px; rotate: 246deg;}
+  .wheel-item:nth-child(7).active img { width: 48px; top:24%; left: 32%;}   
+
+
+  .wheel-item img {width: 35px; top: 35%; left: 35%;}
+  .center-eye {width: 110px; height: 110px;}
+  .center-eye img {width: 70px;}
+
+  .wheel-item span {top: 50%; left: 120%; padding: 4px 8px; border-radius: 5px;font-size: 11px;font-weight: 500; box-shadow: 0 1px 10px rgba(0, 0, 0, .12);}
+  .Foresight:hover span {rotate: 54deg !important;}
+  .Evidence:hover span {left: 54%; top: 0%;rotate: -5deg;}
+  .Integrity:hover span {rotate: -63deg !important;top: 16%;}
+  .De-risk_Security:hover span {left: 58%;rotate: -124deg !important;top: 12px;}
+  .Embeds:hover span {left: 64px;rotate: 179deg !important;top: 30px;width: 62px;}
+  .Response:hover span { left: 49px;rotate: 120deg !important;top: 7px; width: 71px;}
+
+  .IntelligenceContentPart {top: -40px;width: 100%;text-align: center;}
+  .section-subtitle {font-size: 12px;}
+  .sideTitlePart {font-size: 18px !important;}
+  .sideTitlePart-desc {font-size: 13px !important;line-height: 19px !important;}
+  .content-box { text-align: left;}
+  .content-box h3 {font-size: 18px;}
+  .content-box p {font-size: 13px;line-height: 21px;margin-bottom: 0 !important;}
+  .iiris-trust-bar {margin-top: 0;}
+  .accordianItemCustom button {padding: 3px 0; font-size: 13px;}
+  .learn-more{font-size: 13px;}
+  .accordianPart {margin-top: 10px !important;}
+  .accordianPart h3 {margin-bottom: 10px !important;}
+  .content-box_tab a {line-height: 25px; font-size: 13px;}
+  .content-box_tab {padding: 0;}
+  .main-title {font-size: 18px;}
+  .main-desc {font-size: 13px;line-height: 20px; padding: 0; margin-bottom: 15px;} 
+  .riskImage_riskPart {display: none;}
+  .riskBtnWrap_riskPart a {max-width: 66%;margin: 0 auto;}
+  .footer-logo {max-width: 100px;}
+  .brand-title {font-size: 18px;}
+  .brand-text {line-height: 22px;font-size: 13px;}
+  .footer-links a {font-size: 13px;}
+  .newsletter-icon {width: 52px;height: 52px;}
+  .newsletter-card h3 {font-size: 18px;}
+  .newsletter-card p {font-size: 13px;}
+  .contact-item strong {font-weight: 300;}
+  .footer-bottom p {font-size: 13px;}
+  .bottom-links a {font-size: 13px;}
+  .contact-item svg { width: 18px;height: 18px;}
+  .stats-parallax {margin-top: 0px;}
+
+  .about-content {text-align: center;}
+  .premium-card h4 {font-size: 16px;}
+  .about-text { font-size: 14px !important;}
+  .reports-header{text-align: center;}
+  .reports-header > div {text-align: center;width: 100%;}
+  .reports-title { font-size: 18px;}
+  .reports-header a {justify-content: center; width: 100%;}
+  .report-body h5 {font-size: 16px;}
+  .report-body p {font-size: 14px;}
+  .globalPresence_new01 {padding: 0px 0;}
+  .map_header_new01 {padding: 20px;}
+  .map_header_new01 h3 { font-size: 18px;}
+  .mapHolder_new01 { max-width: 100%; height: auto;}
+  .mapWrapper_new01 {overflow-x: inherit;}
+  .legend_new01 {margin-top: 10px;}
+  .cert_header_new01 h3 {font-size: 16px;}
+  .mediaHub_new01 span {text-align: center;}  
+  .mediaHub_new01 h2 {text-align: center;} 
+  .mediaHub_new01 p {text-align: center;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
+  .storyOverlay_new01 h3 {font-size: 17px;}
+  .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
+  .mediaHub_new01 a {max-width: 100%;}
+  .viewAllCard_new01 { height: 200px;}
+  .awardContent_new01 h3 { font-size: 16px;}
+  .awardContent_new01 p {font-size: 14px; line-height: 23px;}
+  .awardSection_new01 {padding: 30px 0;}
+  .contactSection_new01 {padding: 30px 0;}
+  .contactContent_new01 h2 {font-size: 18px;}
+  .contactContent_new01 p {font-size: 14px;}
+  .featureItem_new01 {justify-content: flex-start;}
+  .contactFeature_new01 h5, p{text-align: left;} 
+  .formHeader_new01 h3 {font-size: 18px;}
+  .riskStats_riskPart p {text-align: center;}  
+  
+  .search-container {width: 90%; margin: 60px auto;}
+  .search-box input{font-size: 14px;}
+  .search-box button {width: 30px;height: 30px;}
+  .search-box svg {width: 15px; height: 15px;}
+  .close-search {top: 0;right: 14px;}
+  .close-search svg {width: 25px; height: 25px;}
+  .navbar-nav {align-items: flex-start !important;margin-top: 20px;}
+  .nav-link {padding: 0 !important;}
+  .navbar-right {margin-left: 0;}  
+  
+  .viewAllCard_new01 a {width: 70%;}
+  .riskHeroSection_riskPart {padding: 20px 0; text-align: center;}
+  .devidePart_line {margin: 0 auto; margin-bottom: 10px;}
+  .riskText_riskPart { font-size: 14px;  text-align: center;  }
+  .awardSection_new01::after {width: 0;height: 0;}
+  
+}
+
+/* Small Devices (Large Phones) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .navbar-logo img {width: 80px;}
+  .navbar-toggler-icon { background-size: 80%;}
+  .navbar-toggler { padding: 0 5px;  border: none;}
+  .navbar-toggler:focus { box-shadow:none;}
+  .carousel-caption h1 {font-size: 21px !important; line-height: 27px;}
+  .carousel-caption p {font-size: 12px;}
+  .carousel { height: 400px;}
+  .carousel-inner { height: 400px;}  
+  .carousel-item { height: 400px;min-height: 400px;}
+  .carousel-caption p {display: none;}
+  .carousel-caption a { font-size: 12px; padding: 12px 23px;  width: 70%;  margin-bottom: 10px; min-width: 70%; margin-right: 0;}
+  .custom-indicators {position: absolute; left: 0;}
+  .IntelligencePart {margin-top: 0;}
+  .IntelligenceCanvaPart {width: 100%;position: relative;top: -70px;}
+
+  .circle-wrapper {width: 400px;height: 400px; margin-bottom: -70px;position: relative;left: -30px;}  
+
+  .wheel-item:nth-child(2) {width: 115px; height: 115px; top: 68px; left: 195px; rotate: 306deg;}   
+  .wheel-item:nth-child(3) {width: 115px; height: 115px; top: 150px; right: 53px; rotate: 5deg;} 
+  .wheel-item:nth-child(4) {width: 115px; height: 115px; bottom: 62px; right: 103px; rotate: 64deg;} 
+  .wheel-item:nth-child(5) {width: 115px; height: 115px; bottom: 68px; left: 92px; rotate: 124deg;} 
+  .wheel-item:nth-child(6) {width: 115px; height: 115px; bottom: 148px; left: 53px; rotate: 185deg;} 
+  .wheel-item:nth-child(7) {width: 115px; height: 115px; top: 61px; left: 104px; rotate: 245deg;}
+  
+  .wheel-item:nth-child(2).active {width: 130px; height: 130px; top: 56px; left: 190px; rotate: 306deg;} 
+  .wheel-item:nth-child(2).active img { width: 48px; top: 41%; left: 32%;}
+    
+  .wheel-item:nth-child(3).active {width: 130px; height: 130px; top: 143px; right: 40px; rotate: 4deg;}  
+  .wheel-item:nth-child(3).active img { width: 48px; top: 44%; left: 32%;}   
+
+  .wheel-item:nth-child(4).active {width: 130px; height: 130px; bottom: 49px; right: 95px; rotate: 66deg;}  
+  .wheel-item:nth-child(4).active img { width: 48px; top: 30%; left: 47%;}    
+   
+  .wheel-item:nth-child(5).active {width: 130px; height: 130px; bottom: 57px; left: 81px; rotate: 125deg;} 
+  .wheel-item:nth-child(5).active img { width: 48px; top: 38%; left: 47%;}    
+
+  .wheel-item:nth-child(6).active {width: 130px; height: 130px; bottom: 143px; left: 40px; rotate: 186deg;} 
+  .wheel-item:nth-child(6).active img { width: 48px; top:21%; left: 37%;}   
+  
+  .wheel-item:nth-child(7).active {width: 130px; height: 130px; top: 49px; left: 95px; rotate: 246deg;}
+  .wheel-item:nth-child(7).active img { width: 48px; top:24%; left: 32%;}   
+
+
+  .wheel-item img {width: 35px; top: 35%; left: 35%;}
+  .center-eye {width: 110px; height: 110px;}
+  .center-eye img {width: 70px;}
+
+  .wheel-item span {top: 50%; left: 120%; padding: 4px 8px; border-radius: 5px;font-size: 11px;font-weight: 500; box-shadow: 0 1px 10px rgba(0, 0, 0, .12);}
+  .Foresight:hover span {rotate: 54deg !important;}
+  .Evidence:hover span {left: 54%; top: 0%;rotate: -5deg;}
+  .Integrity:hover span {rotate: -63deg !important;top: 16%;}
+  .De-risk_Security:hover span {left: 58%;rotate: -124deg !important;top: 12px;}
+  .Embeds:hover span {left: 64px;rotate: 179deg !important;top: 30px;width: 62px;}
+  .Response:hover span { left: 49px;rotate: 120deg !important;top: 7px; width: 71px;}
+
+  .IntelligenceContentPart {top: -40px;width: 100%;text-align: center;}
+  .section-subtitle {font-size: 12px;}
+  .sideTitlePart {font-size: 18px !important;}
+  .sideTitlePart-desc {font-size: 13px !important;line-height: 19px !important;}
+  .content-box { text-align: left;}
+  .content-box h3 {font-size: 18px;}
+  .content-box p {font-size: 13px;line-height: 21px;margin-bottom: 0 !important;}
+  .iiris-trust-bar {margin-top: 0;}
+  .accordianItemCustom button {padding: 3px 0; font-size: 13px;}
+  .learn-more{font-size: 13px;}
+  .accordianPart {margin-top: 10px !important;}
+  .accordianPart h3 {margin-bottom: 10px !important;}
+  .content-box_tab a {line-height: 25px; font-size: 13px;}
+  .content-box_tab {padding: 0;}
+  .main-title {font-size: 18px;}
+  .main-desc {font-size: 13px;line-height: 20px; padding: 0; margin-bottom: 15px;} 
+  .riskImage_riskPart {display: none;}
+  .riskBtnWrap_riskPart a {max-width: 66%;margin: 0 auto;}
+  .footer-logo {max-width: 100px;}
+  .brand-title {font-size: 18px;}
+  .brand-text {line-height: 22px;font-size: 13px;}
+  .footer-links a {font-size: 13px;}
+  .newsletter-icon {width: 52px;height: 52px;}
+  .newsletter-card h3 {font-size: 18px;}
+  .newsletter-card p {font-size: 13px;}
+  .contact-item strong {font-weight: 300;}
+  .footer-bottom p {font-size: 13px;}
+  .bottom-links a {font-size: 13px;}
+  .contact-item svg { width: 18px;height: 18px;}
+  .stats-parallax {margin-top: 0px;}
+
+  .about-content {text-align: center;}
+  .premium-card h4 {font-size: 16px;}
+  .about-text { font-size: 14px !important;}
+  .reports-header{text-align: center;}
+  .reports-header > div {text-align: center;width: 100%;}
+  .reports-title { font-size: 18px;}
+  .reports-header a {justify-content: center; width: 100%;}
+  .report-body h5 {font-size: 16px;}
+  .report-body p {font-size: 14px;}
+  .globalPresence_new01 {padding: 0px 0;}
+  .map_header_new01 {padding: 20px;}
+  .map_header_new01 h3 { font-size: 18px;}
+  .mapHolder_new01 { max-width: 100%; height: auto;}
+  .mapWrapper_new01 {overflow-x: inherit;}
+  .legend_new01 {margin-top: 10px;}
+  .cert_header_new01 h3 {font-size: 16px;}
+  .mediaHub_new01 span {text-align: center;}  
+  .mediaHub_new01 h2 {text-align: center;} 
+  .mediaHub_new01 p {text-align: center;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
+  .storyOverlay_new01 h3 {font-size: 17px;}
+  .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
+  .mediaHub_new01 a {max-width: 100%;}
+  .viewAllCard_new01 { height: 200px;}
+  .awardContent_new01 h3 { font-size: 16px;}
+  .awardContent_new01 p {font-size: 14px; line-height: 23px;}
+  .awardSection_new01 {padding: 30px 0;}
+  .contactSection_new01 {padding: 30px 0;}
+  .contactContent_new01 h2 {font-size: 18px;}
+  .contactContent_new01 p {font-size: 14px;}
+  .featureItem_new01 {justify-content: flex-start;}
+  .contactFeature_new01 h5, p{text-align: left;} 
+  .formHeader_new01 h3 {font-size: 18px;}
+  .riskStats_riskPart p {text-align: center;}  
+  
+  .search-container {width: 90%; margin: 60px auto;}
+  .search-box input{font-size: 14px;}
+  .search-box button {width: 30px;height: 30px;}
+  .search-box svg {width: 15px; height: 15px;}
+  .close-search {top: 0;right: 14px;}
+  .close-search svg {width: 25px; height: 25px;}
+  .navbar-nav {align-items: flex-start !important;margin-top: 20px;}
+  .nav-link {padding: 0 !important;}
+  .navbar-right {margin-left: 0;}  
+  
+  .viewAllCard_new01 a {width: 70%;}
+  .riskHeroSection_riskPart {padding: 20px 0; text-align: center;}
+  .devidePart_line {margin: 0 auto; margin-bottom: 10px;}
+  .riskText_riskPart { font-size: 14px;  text-align: center;  }
+  .awardSection_new01::after {width: 0;height: 0;}
+  
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
+
+  .carousel { height: 600px;}
+  .carousel-inner { height: 600px;}  
+  .carousel-item { height: 600px;min-height: 600px;}
+  .content-box { text-align: left;}
+  .stats-parallax{margin-top: 0;}
+  .stats-parallax .col-6 {width: 25%;}
+  
+  .IntelligencePart {margin-top: 0;}
+  .IntelligenceContentPart {top: 0px;}
+  .IntelligenceCanvaPart {position: relative;top: -70px;}
+
+  .circle-wrapper {width: 400px;height: 400px; margin-bottom: -70px;position: relative;left: -30px;}  
+
+  .wheel-item:nth-child(2) {width: 115px; height: 115px; top: 68px; left: 195px; rotate: 306deg;}   
+  .wheel-item:nth-child(3) {width: 115px; height: 115px; top: 150px; right: 53px; rotate: 5deg;} 
+  .wheel-item:nth-child(4) {width: 115px; height: 115px; bottom: 62px; right: 103px; rotate: 64deg;} 
+  .wheel-item:nth-child(5) {width: 115px; height: 115px; bottom: 68px; left: 92px; rotate: 124deg;} 
+  .wheel-item:nth-child(6) {width: 115px; height: 115px; bottom: 148px; left: 53px; rotate: 185deg;} 
+  .wheel-item:nth-child(7) {width: 115px; height: 115px; top: 61px; left: 104px; rotate: 245deg;}
+  
+  .wheel-item:nth-child(2).active {width: 130px; height: 130px; top: 56px; left: 190px; rotate: 306deg;} 
+  .wheel-item:nth-child(2).active img { width: 48px; top: 41%; left: 32%;}
+    
+  .wheel-item:nth-child(3).active {width: 130px; height: 130px; top: 143px; right: 40px; rotate: 4deg;}  
+  .wheel-item:nth-child(3).active img { width: 48px; top: 44%; left: 32%;}   
+
+  .wheel-item:nth-child(4).active {width: 130px; height: 130px; bottom: 49px; right: 95px; rotate: 66deg;}  
+  .wheel-item:nth-child(4).active img { width: 48px; top: 30%; left: 47%;}    
+   
+  .wheel-item:nth-child(5).active {width: 130px; height: 130px; bottom: 57px; left: 81px; rotate: 125deg;} 
+  .wheel-item:nth-child(5).active img { width: 48px; top: 38%; left: 47%;}    
+
+  .wheel-item:nth-child(6).active {width: 130px; height: 130px; bottom: 143px; left: 40px; rotate: 186deg;} 
+  .wheel-item:nth-child(6).active img { width: 48px; top:21%; left: 37%;}   
+  
+  .wheel-item:nth-child(7).active {width: 130px; height: 130px; top: 49px; left: 95px; rotate: 246deg;}
+  .wheel-item:nth-child(7).active img { width: 48px; top:24%; left: 32%;}   
+
+
+  .wheel-item img {width: 35px; top: 35%; left: 35%;}
+  .center-eye {width: 110px; height: 110px;}
+  .center-eye img {width: 70px;}
+
+  .wheel-item span {top: 50%; left: 120%; padding: 4px 8px; border-radius: 5px;font-size: 11px;font-weight: 500; box-shadow: 0 1px 10px rgba(0, 0, 0, .12);}
+  .Foresight:hover span {rotate: 54deg !important;}
+  .Evidence:hover span {left: 54%; top: 0%;rotate: -5deg;}
+  .Integrity:hover span {rotate: -63deg !important;top: 16%;}
+  .De-risk_Security:hover span {left: 58%;rotate: -124deg !important;top: 12px;}
+  .Embeds:hover span {left: 64px;rotate: 179deg !important;top: 30px;width: 62px;}
+  .Response:hover span { left: 49px;rotate: 120deg !important;top: 7px; width: 71px;}
+
+  
+  .search-container {width: 90%; margin: 60px auto;}
+  .search-box input{font-size: 14px;}
+  .search-box button {width: 30px;height: 30px;}
+  .search-box svg {width: 15px; height: 15px;}
+  .close-search {top: 0;right: 14px;}
+  .close-search svg {width: 25px; height: 25px;}
+  .navbar-nav {align-items: flex-start !important;margin-top: 20px;}
+  .nav-link {padding: 0 !important;}
+  .navbar-right {margin-left: 0;}  
+
+  .main-title { font-size: 25px;}
+  .main-desc {font-size: 15px;padding: 0 30px;}
+  .about-content {text-align: center;} 
+  .about-text {font-size: 15px; }
+  .about-content br {display: none;}
+  .reports-title {font-size: 25px;}
+  .reports-title br {display: none;}
+  .globalPresence_new01 { padding: 20px 0;}
+  .contactContent_new01 h2 {font-size: 25px;}
+  .featureItem_new01 {justify-content: left;}
+  .contactFeature_new01 {text-align: left;}
+  .viewAllCard_new01 a {width: 50%;}
+   .riskImage_riskPart { display: none;}
+
+}
+
+/* Large Tablets / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* Desktops */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .IntelligenceCanvaPart { left: -95px;}
+    
+}
+
+/* Large Desktops */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+    
+}
+
+/* Extra Large Screens */
+@media only screen and (min-width: 1600px) {
+    
+}
