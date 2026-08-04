@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIRIS Consulting</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="assets/css/header_footer.css">
+    <link rel="stylesheet" href="assets/css/internal_page.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Menu start here -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand navbar-logo" href="index.html">
+                <img src="assets/images/iiris_logo.png" alt="IIRIS">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbar">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item dropdown-menu-custom">
+                        <a href="#" class="nav-link">
+                            Company <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-menu-custom">
+                        <a href="#" class="nav-link">
+                            Solutions <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li><a href="#">Cyber Security</a></li>
+                            <li><a href="#">Risk Advisory</a></li>
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Data Analytics</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-menu-custom">
+                        <a href="#" class="nav-link">
+                            Platform <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-menu-custom">
+                        <a href="#" class="nav-link">
+                            Industries <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li><a href="#">Banking</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Insurance</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-menu-custom">
+                        <a href="#" class="nav-link">
+                            Services <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Training</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Right Side -->
+                    <div class="navbar-right">
+                        <a href="#" class="icon-btn open-search for_desktop_search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                        </a>
+
+                        <a href="#" class="contact-btn"> Contact us </a>
+                    </div>
+                </ul>
+                
+                
+                <!-- Search Overlay -->
+                <div class="search-overlay">
+
+                    <button class="close-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" placeholder="Type more words to refine search">
+                            
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                            </button>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-lg-5">
+                                <h6>QUICK LINKS</h6>
+                                <ul class="search-links">
+                                    <li><a href="#">Cyber Security</a></li>
+                                    <li><a href="#">Risk Advisory</a></li>
+                                    <li><a href="#">Artificial Intelligence</a></li>
+                                    <li><a href="#">Digital Transformation</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h6>POPULAR TOPICS</h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="search-card">
+                                            <img src="assets/images/search1.jpg" alt="">
+                                            <h5>Business Consulting</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="search-card">
+                                            <img src="assets/images/search2.jpg" alt="">
+                                            <h5>Technology Solutions</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </nav>	
+    <!-- Menu End here -->
+    <section class="page-banner">
+        <div class="banner-overlay"></div>
+
+        <!-- Decorative SVG -->
+        <div class="banner-svg">
+            <!-- <img src="assets/images/internal_page/50.png"/> -->
+        </div>
+
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Tech-Driven Value Catalysts in Risk, Security, and Intelligence</p>
+        </div>
+    </section>
+
+    <!-- Your contente Start here -->
+    <div class="content-area-start">
+
+        <section class="who-we-are section-space">
+            <div class="container">
+                <div class="row" style="position: relative;">
+                    <div class="col-xl-6">
+                        <span class="section-label"> WHO WE ARE </span>
+
+                        <h2 class="who-title">
+                            We are catalysts<br>
+                            <span>to your business growth.</span>
+                        </h2>
+                        
+                        <p class="who-intro">
+                            IIRIS helps organisations grow with confidence by combining digitisation, intelligent outsourcing,
+                            risk management and actionable intelligence into one integrated ecosystem.
+                        </p>
+                        <p>
+                            IIRIS delivers measurable business value by integrating advanced analytics, structured process
+                            delivery and deep domain expertise. We help organisations prevent risk, detect emerging threats
+                            early and minimise operational disruption through intelligent decision support.
+                        </p>
+
+                        <p>
+                            Acting as an extension of our clients' organisations, we manage process-intensive functions
+                            including compliance monitoring, background verification, brand surveillance, security
+                            operations and regulatory readiness.
+                        </p>
+
+                        <p>
+                            Through digitisation and managed services, we reduce operational complexity while improving
+                            quality, consistency and governance across critical business functions.
+                        </p>
+                    </div>
+
+                    <div class="col-xl-6" style="position: relative;">  
+                        <div class="who-banner">
+                            <img src="assets/images/internal_page/who-we-wre.png" alt="Who We Are" />
+
+                            
+
+                            <!-- <div class="floating-card two">
+                                <h5>4250+</h5>
+                                <span>Clients Worldwide</span>
+                            </div>
+
+                            <div class="floating-card three">
+                                <h5>98%</h5>
+                                <span>Client Satisfaction</span>
+                            </div> -->
+                        </div>
+                        <div class="floating-card">
+
+                            <div class="number01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffe972" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth-icon lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
+                                <div>
+                                    <h5>
+                                        <span class="counter" data-count="150">0</span> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                    </h5>
+                                    <h3>Regions Served</h3>
+                                </div>
+                            </div>
+
+                            <hr class="lineHr">
+
+                            <div class="number01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffe972" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-icon lucide-building"><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M12 6h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/><path d="M8 6h.01"/><path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
+                                <div>
+                                    <h5>
+                                        <span class="counter" data-count="4250">0</span> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                    </h5>
+                                    <h3>Clients Worldwide</h3>
+                                </div>
+                            </div>
+
+                            <hr class="lineHr">
+
+                            <div class="number01">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffe972" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <div>
+                                    <h5>
+                                        <span class="counter" data-count="98">0</span> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-percent-icon lucide-percent"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+                                    </h5>
+                                    <h3>Client Satisfaction</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </section>
+
+        <section class="value-flow-section mt-4">
+            <div class="container">
+                <div class="value-heading text-center">
+                    <span class="section-label">HOW WE CREATE VALUE</span>
+
+                    <h2 class="who-title">
+                        Turning Complex Challenges<br>
+                        <span>Into Business Advantage</span>
+                    </h2>
+
+                    <p class="who-intro">
+                        Every engagement follows a structured methodology that combines technology, domain expertise and
+                        intelligence-driven execution.
+                    </p>
+                </div>
+                
+                <!-- Capabilities -->
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" style="margin-top: 0;">
+                        <div class="capability-box card-blue">
+                            <div class="cap-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+                            </div>
+
+                            <h4>Digitisation</h4>
+
+                            <p>Modernising business operations through intelligent digital processes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" style="margin-top: 0;">
+                        <div class="capability-box card-purple">
+                            <div class="cap-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers-icon lucide-layers"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>
+                            </div>
+
+                            <h4>Process Outsourcing</h4>
+
+                            <p>Scalable managed services that improve efficiency and operational excellence.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" style="margin-top: 0;">
+                        <div class="capability-box card-green">
+                            <div class="cap-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert-icon lucide-shield-alert"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                            </div>
+
+                            <h4>Risk Management</h4>
+
+                            <p>Helping businesses anticipate, prevent and respond to evolving risks.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" style="margin-top: 0;">
+                        <div class="capability-box card-gold">
+                            <div class="cap-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-spline-icon lucide-chart-spline"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7"/></svg>
+                            </div>
+
+                            <h4>Actionable Intelligence</h4>
+
+                            <p>Delivering insights that enable faster and more confident business decisions.</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="client-philosophy">
+            <div class="overlay"></div>
+
+            <div class="container">
+                <div class="quote-box">
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+
+                    <h2>
+                        We don't work
+                        <span>for</span>
+                        IIRIS.
+                    </h2>
+
+                    <h2>
+                        We work
+                        <span>as an extension</span>
+                        of every client.
+                    </h2>
+
+                    <div class="gold-line"></div>
+
+                    <p>Every engagement is built on trust, precision, and the belief that your goals become our goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="purpose-section">
+            <div class="container">
+                <div class="purpose-heading">
+                    <span class="section-label">OUR PURPOSE</span>
+
+                    <h2 class="who-title">Intelligence that drives<br> <span>resilient organisations.</span></h2>
+                </div>
+
+                <!-- Vision -->
+
+                <div class="purpose-row">
+                    <div class="purpose-content">
+                        <h6>VISION</h6>
+
+                        <h3>Redefining how organisations perceive and manage risk.</h3>
+
+                        <p>
+                            To transform risk from a challenge into a strategic advantage while becoming a trusted growth
+                            partner through integrated intelligence, resilience and innovation.
+                        </p>
+                    </div>
+
+                    <div class="purpose-image">
+                        <img src="assets/images/internal_page/vosion.jpeg" alt="Vision" />
+                    </div>
+                </div>
+
+                <!-- Mission -->
+
+                <div class="purpose-row reverse">
+                    <div class="purpose-image">
+                        <img src="assets/images/internal_page/mission.jpeg" alt="Mission" />
+                    </div>
+
+                    <div class="purpose-content">
+                        <h6>MISSION</h6>
+
+                        <h3>Making security a business growth strategy.</h3>
+
+                        <p>
+                            We integrate security into business strategy, delivering sustainable operational improvements,
+                            measurable outcomes and intelligence-led growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cta">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2> We don't simply manage risk. <span>We create confidence.</span> </h2>
+                    <p>
+                        Helping organisations operate with clarity, resilience and confidence through intelligence, technology
+                        and trusted partnerships.
+                    </p>
+
+                    <a href="contact.html" class="theme-btn"> 
+                        Let's Start a Conversation 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Footer=================Start -->
+    <footer class="premium-footer">
+        <div class="footer-overlay"></div>
+        <div class="container position-relative">
+            <div class="row g-5 align-items-start">
+                <!-- Brand -->
+                <div class="col-lg-3"> <img src="assets/images/iiris_logo.png" class="footer-logo mb-4" alt="IIRIS">
+                    <h3 class="brand-title">
+                    Global reach.<br> Intelligence-led.<br> Impact that <span>matters.</span> </h3>
+                    <p class="brand-text mt-4"> IIRIS empowers organizations with trusted risk intelligence and advisory solutions to navigate uncertainty and build
+                    resilience. </p>
+                    <div class="social-links mt-4"> 
+                        <a href="#">
+                            <svg id="Capa_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 798.62"><path d="M96.15,0C43.02,0,0,43.09,0,96.1c0,53.07,43.01,96.14,96.16,96.14s96.08-43.08,96.08-96.14S149.16,0,96.15,0Z" style="fill:#3db7f4;"/><rect x="13.22" y="265.17" width="165.8" height="533.45" style="fill:#3db7f4;"/><path d="M601.12,251.91c-80.65,0-134.73,44.22-156.87,86.16h-2.22v-72.89h-159.03v533.45h165.66v-263.9c0-69.57,13.25-136.96,99.51-136.96s86.16,79.57,86.16,141.42v259.43h165.68v-292.59c0-143.62-30.99-254.11-198.88-254.11Z" style="fill:#3db7f4;"/></svg>
+                        </a> 
+                        <a href="#">
+                            <svg id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 568.81"><path d="M700,67.35c-9.58,14.35-20.46,27.79-32.5,40.15-12.1,12.44-25.25,23.81-39.3,34,.45,6.27.68,12.56.7,18.85,0,28.7-3.05,57.05-9.2,85.1-6.13,27.95-15.07,55.21-26.7,81.35-16.1,36.84-37.38,71.18-63.2,102-24.74,29.47-53.72,55.1-86,76.05-32.39,20.9-67.69,36.91-104.75,47.5-38.67,11.07-78.72,16.61-118.95,16.45-38.79.05-77.4-5.42-114.65-16.25-37.34-10.87-72.87-27.18-105.45-48.4,75.96,9.18,152.45-12.22,212.6-59.5-45.19-.63-87.38-22.72-113.65-59.5-8.83-12.19-15.7-25.68-20.35-40,4.55.7,9.05,1.3,13.5,1.75,17.16,1.68,34.49.17,51.1-4.45-16.39-3.23-32.07-9.36-46.3-18.1-13.79-8.48-26.09-19.17-36.4-31.65-21.16-25.63-32.67-57.87-32.5-91.1v-1.65c20.1,11.35,41.85,17.4,65.3,18.1-19.55-13.32-35.61-31.16-46.8-52-5.48-10.28-9.73-21.17-12.65-32.45-5.95-23.87-5.83-48.84.35-72.65,3.15-12.15,8.05-23.7,14.7-34.65,18.2,22.55,38.5,42.8,60.8,60.65,44.32,35.54,95.53,61.51,150.4,76.25,27.69,7.42,56.11,11.83,84.75,13.15-1.38-5.33-2.35-10.77-2.9-16.25-.56-5.5-.85-11.02-.85-16.55,0-19.85,3.75-38.5,11.3-55.9,14.64-34.38,42.02-61.76,76.4-76.4C446.44,3.7,465.46-.13,484.65,0c39.8-.19,77.86,16.29,104.95,45.45,32.08-6.33,62.83-18.14,90.9-34.9-10.41,33.32-32.83,61.58-62.9,79.3,28.44-3.31,56.22-10.87,82.4-22.45v-.05Z" style="fill:#3db7f4;"/></svg>
+                        </a> 
+                        <a href="#">
+                            <svg id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 566.1"><path d="M633.85,0H166.15C74.39,0,0,74.39,0,166.15v233.8c0,91.76,74.39,166.15,166.15,166.15h467.7c91.76,0,166.15-74.39,166.15-166.15v-233.8c0-91.76-74.39-166.15-166.15-166.15ZM521.48,294.43l-218.76,104.33c-5.83,2.78-12.56-1.47-12.56-7.93v-215.19c0-6.55,6.91-10.79,12.75-7.83l218.76,110.86c6.5,3.3,6.39,12.62-.19,15.76Z" style="fill:#3db7f4;"/></svg>
+                        </a>          
+                        <a href="#">
+                            <svg id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716.67 616.67"><g id="style_fill"><g id="email"><path id="Subtract" d="M191.67,0c-53.83,0-102.51,13.45-137.84,46.26C18.15,79.38,0,128.57,0,191.67v233.33c0,63.1,18.15,112.28,53.82,145.4,35.33,32.81,84.01,46.26,137.84,46.26h333.33c53.83,0,102.51-13.45,137.84-46.26,35.67-33.12,53.82-82.3,53.82-145.4v-233.33c0-63.1-18.15-112.28-53.82-145.4C627.51,13.45,578.83,0,525,0H191.67ZM599.28,187.08c10.92-8.44,12.94-24.14,4.49-35.07-8.44-10.93-24.14-12.94-35.07-4.5l-184.9,142.87c-15,11.6-35.95,11.6-50.95,0l-184.9-142.87c-10.93-8.44-26.63-6.43-35.07,4.5-8.44,10.93-6.43,26.63,4.5,35.07l184.9,142.88c33.01,25.51,79.08,25.51,112.1,0l184.9-142.88Z" style="fill:#3db7f4; fill-rule:evenodd;"/></g></g></svg>
+                        </a> 
+                    </div>
+                </div>
+                <!-- Explore -->
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Explore IIRIS</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Insights</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Meet Our Experts</a></li>
+                    <li><a href="#">Global Presence</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Important -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="footer-heading">Important Links</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Code of Conduct</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Whistleblower Hotline</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-lg-4">
+                    <div class="newsletter-card">
+                        <div class="newsletter-icon"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg> 
+                        </div>
+                        <h3>Stay Ahead with Risk Intelligence</h3>
+                        <p> Subscribe to our newsletter for the latest insights, reports, and industry updates. </p>
+                        <div class="input-group mt-4">
+                            <input type="email" class="form-control" placeholder="Enter your email address"> 
+                        </div> 
+                        <button class="btn btn-primary btn-lg mt-3" style="width: 100%;"> 
+                            Subscribe Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
+                        </button>          
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Strip -->
+            <div class="contact-strip mt-5">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="contact-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div> <small>Headquarters</small> <strong>Unit No. 1105 & 1106, Tower B, “UNITECH CYBER PARK” Sector 39, Gurugram, Haryana 122003</strong> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                            <div> <small>Phone</small> <strong>+91-9205595358</strong> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                            <div> <small>Email</small> <strong>contactus@iirisconsulting.com</strong> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            <div> <small>Region</small> <strong>Global</strong> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Bar -->
+            <div class="footer-bottom mt-5 pt-4">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+                    <p class="mb-0">© 2026 IIRIS Global. All rights reserved.</p>
+                    <div class="bottom-links"> <a href="#">Terms of Use</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer=================End -->   
+
+    <!-- Bootstrap -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        const overlay = document.querySelector(".search-overlay");
+        document.querySelector(".open-search").addEventListener("click", function(e){
+            e.preventDefault();
+            overlay.classList.add("active");
+            document.querySelector(".search-box input").focus();
+        });
+
+        document.querySelector(".close-search").addEventListener("click", function(){
+            overlay.classList.remove("active");
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            function runCounter() {
+                $(".counter").each(function () {
+                    var $this = $(this);
+
+                    $this.stop(true);
+
+                    $this.prop("Counter", 0).animate(
+                        {
+                            Counter: $this.data("count"),
+                        },
+                        {
+                            duration: 1000,
+
+                            easing: "swing",
+
+                            step: function (now) {
+                                $this.text(Math.ceil(now).toLocaleString());
+                            },
+
+                            complete: function () {
+                                $this.text($this.data("count").toLocaleString());
+                            },
+                        }
+                    );
+                });
+            }
+
+            function checkCounter() {
+                var section = $(".floating-card");
+
+                if (!section.length) return;
+
+                var sectionTop = section.offset().top;
+                var sectionBottom = sectionTop + section.outerHeight();
+
+                var windowTop = $(window).scrollTop();
+                var windowBottom = windowTop + $(window).height();
+
+                if (windowBottom > sectionTop + 100 && windowTop < sectionBottom) {
+                    runCounter();
+                }
+            }
+
+            // On page load
+            checkCounter();
+
+            // On scroll
+            $(window).on("scroll", function () {
+                checkCounter();
+            });
+
+            // On refresh / resize
+            $(window).on("resize", function () {
+                checkCounter();
+            });
+        });
+
+    </script>
+
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        const observer = new IntersectionObserver((entries)=>{
+
+            entries.forEach(entry=>{
+
+                if(entry.isIntersecting){
+
+                    const counter = entry.target;
+                    const target = +counter.dataset.count;
+
+                    let count = 0;
+
+                    const speed = target / 80;
+
+                    const update = ()=>{
+
+                        count += speed;
+
+                        if(count < target){
+
+                            counter.innerText = Math.ceil(count);
+
+                            requestAnimationFrame(update);
+
+                        }else{
+
+                            counter.innerText = target;
+
+                        }
+
+                    }
+
+                    update();
+
+                    observer.unobserve(counter);
+
+                }
+
+            });
+
+        });
+
+        counters.forEach(counter=>observer.observe(counter));
+    </script>
+</body>
+</html>
