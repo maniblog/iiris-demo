@@ -30,26 +30,6 @@ new bootstrap.Carousel(heroSlider, {
 });
 
 
-/* search js============start*/
-	const overlay = document.querySelector(".search-overlay");
-
-	document.querySelector(".open-search").addEventListener("click", function(e){
-
-		e.preventDefault();
-
-		overlay.classList.add("active");
-
-		document.querySelector(".search-box input").focus();
-
-	});
-
-	document.querySelector(".close-search").addEventListener("click", function(){
-
-		overlay.classList.remove("active");
-
-	});
-
-/* search js============end*/
 
 
 
@@ -465,11 +445,49 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Award Section===================End
 
-// Map js==================Start
+// WHY CHOOSE IIRIS js==================Start
+
+document.querySelectorAll(".flipCard_flip3d").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        if(window.innerWidth <= 991){
+
+            card.classList.toggle("active");
+
+        }
+
+    });
+
+});
+
+// WHY CHOOSE IIRIS Js=================End
 
 
 
-// Map Js=================End
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".feature-card, .mini-card");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        },
+        {
+            threshold: 0.15,
+        }
+    );
+
+    cards.forEach((card) => {
+        card.classList.add("hidden-card");
+
+        observer.observe(card);
+    });
+});
+
 
 
 
