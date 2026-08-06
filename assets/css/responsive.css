@@ -58,7 +58,7 @@
   .main-title {font-size: 18px;}
   .main-desc {font-size: 13px;line-height: 20px; padding: 0; margin-bottom: 15px;} 
   .riskImage_riskPart {display: none;}
-  .riskBtnWrap_riskPart a {max-width: 66%;margin: 0 auto;}
+  .riskBtnWrap_riskPart a {max-width: 100%;margin: 0 auto;}
   .footer-logo {max-width: 100px;}
   .brand-title {font-size: 18px;}
   .brand-text {line-height: 22px;font-size: 13px;}
@@ -124,6 +124,48 @@
   .riskText_riskPart { font-size: 14px;  text-align: center;  }
   .awardSection_new01::after {width: 0;height: 0;}
 
+
+  /* -------------------------------- */
+  .whyChoose_flip3d {padding: 30px 0;}
+  .main-desc {text-align: center;}
+  .heading_part {margin-bottom: 20px !important;}
+  .flipCard_flip3d {margin-bottom: -20px;}
+  .insight-section { padding: 30px 0;}
+  .subtitle01 {text-align: center;}
+  .section-title h2 {font-size: 18px; text-align: center;}
+  .abtText001 {margin-top: -29px;}
+  .insight-section a {display: block; width: 100%; text-align: center; margin: 0 auto; max-width: 150px;}
+  .insight-section p {text-align: center; font-size: 14px;}
+  .insight-grid {display: block;margin-top: -20px;}
+
+  /* about us */
+  .custom-navbar {background: #091C35;}
+  .page-banner h1 {font-size: 25px;margin-top: -15px;}
+  .section-space {padding: 20px 0;}
+  .who-title {font-size: 18px;}
+  .section-space {text-align: center;}
+  .who-intro { font-size: 14px; text-align: center;}
+  .section-space p {text-align: center; font-size: 14px;}
+  .who-banner {width: 100%;}
+  .quote-box h2 {font-size: 25px; line-height: 30px;}
+  .client-philosophy {padding: 0px 0;}
+  .feature-card p {text-align: left !important;line-height: 20px;}
+  .card-content {bottom: 40px;} 
+  .legend_new01 div { width: 100%;}
+  .abtUS_flip3d {height: 315px;}
+  .quote-box h2 {font-size: 21px;line-height: 30px; margin: 0;}
+  .quote-box p {font-size: 14px; text-align: center;}
+  .purpose-section {padding: 30px 0;}
+  .purpose-section h2 {font-size: 18px;}
+  .purpose-heading {margin-bottom: 30px;}
+  .purpose-content h3 {font-size: 18px;margin-bottom: 10px;}
+  .purpose-content p {line-height: 25px; font-size: 14px; margin-bottom: 0;}
+  .purpose-row {display: block;margin-bottom: -29px;}
+  .purpose-content h6 {margin-bottom: 10px;}
+  .purpose-image {margin-top: 10px;}
+  .purpose-content {margin-top: 20px;}
+  .about-cta {margin-top: 20px;}
+  .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
 }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .navbar-logo img {width: 80px;}
@@ -263,6 +305,48 @@
   .devidePart_line {margin: 0 auto; margin-bottom: 10px;}
   .riskText_riskPart { font-size: 14px;  text-align: center;  }
   .awardSection_new01::after {width: 0;height: 0;}
+
+
+  /* -------------------------------- */
+  .whyChoose_flip3d {padding: 30px 0;}
+  .main-desc {text-align: center;}
+  .heading_part {margin-bottom: 20px !important;}
+  .flipCard_flip3d {margin-bottom: -20px;}
+  .insight-section { padding: 30px 0;}
+  .subtitle01 {text-align: center;}
+  .section-title h2 {font-size: 18px; text-align: center;}
+  .abtText001 {margin-top: -29px;}
+  .insight-section a {display: block; width: 100%; text-align: center; margin: 0 auto; max-width: 150px;}
+  .insight-section p {text-align: center; font-size: 14px;}
+  .insight-grid {display: block;margin-top: -20px;}
+
+  /* about us */
+  .custom-navbar {background: #091C35;}
+  .page-banner h1 {font-size: 25px;margin-top: -15px;}
+  .section-space {padding: 20px 0;}
+  .who-title {font-size: 18px;}
+  .section-space {text-align: center;}
+  .who-intro { font-size: 14px; text-align: center;}
+  .section-space p {text-align: center; font-size: 14px;}
+  .who-banner {width: 100%;}
+  .quote-box h2 {font-size: 25px; line-height: 30px;}
+  .client-philosophy {padding: 0px 0;}
+  .feature-card p {text-align: left !important;line-height: 20px;}
+  .card-content {bottom: 40px;}
+  .legend_new01 div { width: 100%;}
+  .abtUS_flip3d {height: 315px;}
+  .quote-box h2 {font-size: 21px;line-height: 30px; margin: 0;}
+  .purpose-section {padding: 30px 0;}
+  .purpose-section h2 {font-size: 18px;}
+  .purpose-heading {margin-bottom: 30px;}
+  .purpose-content h3 {font-size: 18px;margin-bottom: 10px;}
+  .purpose-content p {line-height: 25px; font-size: 14px; margin-bottom: 0;}
+  .purpose-row {display: block;margin-bottom: -29px;}
+  .purpose-content h6 {margin-bottom: 10px;}
+  .purpose-image {margin-top: 10px;}
+  .purpose-content {margin-top: 20px;}
+  .about-cta {margin-top: 20px;}
+  .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
   
 }
 
@@ -405,6 +489,48 @@
   .devidePart_line {margin: 0 auto; margin-bottom: 10px;}
   .riskText_riskPart { font-size: 14px;  text-align: center;  }
   .awardSection_new01::after {width: 0;height: 0;}
+
+
+  /* -------------------------------- */
+  .whyChoose_flip3d {padding: 30px 0;}
+  .main-desc {text-align: center;}
+  .heading_part {margin-bottom: 20px !important;}
+  .flipCard_flip3d {margin-bottom: -20px;}
+  .insight-section { padding: 30px 0;}
+  .subtitle01 {text-align: center;}
+  .section-title h2 {font-size: 18px; text-align: center;}
+  .abtText001 {margin-top: -29px;}
+  .insight-section a {display: block; width: 100%; text-align: center; margin: 0 auto; max-width: 150px;}
+  .insight-section p {text-align: center; font-size: 14px;}
+  .insight-grid {display: block;margin-top: -20px;}
+
+  /* about us */
+  .custom-navbar {background: #091C35;}
+  .page-banner h1 {font-size: 25px;margin-top: -15px;}
+  .section-space {padding: 20px 0;}
+  .who-title {font-size: 18px;}
+  .section-space {text-align: center;}
+  .who-intro { font-size: 14px; text-align: center;}
+  .section-space p {text-align: center; font-size: 14px;}
+  .who-banner {width: 100%;}
+  .quote-box h2 {font-size: 25px; line-height: 30px;}
+  .client-philosophy {padding: 0px 0;}
+  .feature-card p {text-align: left !important;line-height: 20px;}
+  .card-content {bottom: 40px;}
+  .legend_new01 div { width: 100%;}
+  .abtUS_flip3d {height: 315px;}
+  .quote-box h2 {font-size: 21px;line-height: 30px; margin: 0;}
+  .purpose-section {padding: 30px 0;}
+  .purpose-section h2 {font-size: 18px;}
+  .purpose-heading {margin-bottom: 30px;}
+  .purpose-content h3 {font-size: 18px;margin-bottom: 10px;}
+  .purpose-content p {line-height: 25px; font-size: 14px; margin-bottom: 0;}
+  .purpose-row {display: block;margin-bottom: -29px;}
+  .purpose-content h6 {margin-bottom: 10px;}
+  .purpose-image {margin-top: 10px;}
+  .purpose-content {margin-top: 20px;}
+  .about-cta {margin-top: 20px;}
+  .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
   
 }
 
@@ -486,6 +612,19 @@
   .contactFeature_new01 {text-align: left;}
   .viewAllCard_new01 a {width: 50%;}
    .riskImage_riskPart { display: none;}
+  /* .large-card .card-image {height: 503px;} */
+  .flipCard_flip3d {height: 350px;}
+  .insight-section {padding: 40px 0;}
+  .hidden-card {width: 330px;}
+  .large-card .card-image {height: 592px;}
+  .brand-title br {display: none;}
+  .brand-title {font-size: 27px;}
+  .brand-text {max-width: 100%; font-size: 14px;}
+
+  /* about us */
+  .custom-navbar {background: #091C35;}
+  .page-banner h1 {font-size: 28px; margin-top: 0px;}
+  .who-banner {height: 250px; width: 100%;  }
 
 }
 
