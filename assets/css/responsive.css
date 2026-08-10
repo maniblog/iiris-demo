@@ -1,5 +1,10 @@
 /* Extra Small Devices (Phones) */
 @media only screen and (min-width: 320px) and (max-width: 359px) {
+  .form-control {font-size: 14px;}
+  .form-select {font-size: 14px;}
+  .partner-visual {width: 100%;}
+  .stat_box_new01 p {text-align: center;}
+  .awardInfoGrid_new01 {grid-template-columns: repeat(2, 1fr); gap: 7px; margin-bottom: 16px;}
   .navbar-logo img {width: 80px;}
   .navbar-toggler-icon { background-size: 80%;}
   .navbar-toggler { padding: 0 5px;  border: none;}
@@ -69,7 +74,7 @@
   .contact-item strong {font-weight: 300;}
   .footer-bottom p {font-size: 13px;}
   .bottom-links a {font-size: 13px;}
-  .contact-item svg { width: 18px;height: 18px;}
+  .contact-item svg {height: 18px;}
   .stats-parallax {margin-top: 0px;}
 
   .about-content {text-align: center;}
@@ -91,11 +96,12 @@
   .mediaHub_new01 span {text-align: center;}  
   .mediaHub_new01 h2 {text-align: center;} 
   .mediaHub_new01 p {text-align: center;}
-  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 100%; display: block; margin-bottom: 20px;}
+  .mediaInfo_new01 h5 {font-size: 14px;}
   .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
   .storyOverlay_new01 h3 {font-size: 17px;}
   .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
-  .mediaHub_new01 a {max-width: 100%;}
+  /* .mediaHub_new01 a {max-width: 100%;} */
   .viewAllCard_new01 { height: 200px;}
   .awardContent_new01 h3 { font-size: 16px;}
   .awardContent_new01 p {font-size: 14px; line-height: 23px;}
@@ -166,8 +172,19 @@
   .purpose-content {margin-top: 20px;}
   .about-cta {margin-top: 20px;}
   .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
+
+  .team-filter {gap: 12px; width: 100%;}
+  .team-filter-btn {font-size: 14px};
+  .page-banner p {font-size: 13px; line-height: 16px; padding-top: 10px;}
+  .team-content p {font-size: 13px; }
+  .iiris-team-section {padding: 30px 0 30px;}
 }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
+  .form-control {font-size: 14px;}
+  .form-select {font-size: 14px;}
+  .partner-visual {width: 100%;}
+  .stat_box_new01 p {text-align: center;}
+  .awardInfoGrid_new01 {grid-template-columns: repeat(2, 1fr); gap: 7px; margin-bottom: 16px;}
   .navbar-logo img {width: 80px;}
   .navbar-toggler-icon { background-size: 80%;}
   .navbar-toggler { padding: 0 5px;  border: none;}
@@ -251,7 +268,7 @@
   .contact-item strong {font-weight: 300;}
   .footer-bottom p {font-size: 13px;}
   .bottom-links a {font-size: 13px;}
-  .contact-item svg { width: 18px;height: 18px;}
+  .contact-item svg {height: 18px;}
   .stats-parallax {margin-top: 0px;}
 
   .about-content {text-align: center;}
@@ -273,11 +290,12 @@
   .mediaHub_new01 span {text-align: center;}  
   .mediaHub_new01 h2 {text-align: center;} 
   .mediaHub_new01 p {text-align: center;}
-  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 100%; display: block; margin-bottom: 20px;}
+  .mediaInfo_new01 h5 {font-size: 14px;}
   .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
   .storyOverlay_new01 h3 {font-size: 17px;}
   .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
-  .mediaHub_new01 a {max-width: 100%;}
+  /* .mediaHub_new01 a {max-width: 100%;} */
   .viewAllCard_new01 { height: 200px;}
   .awardContent_new01 h3 { font-size: 16px;}
   .awardContent_new01 p {font-size: 14px; line-height: 23px;}
@@ -352,6 +370,11 @@
 
 /* Small Devices (Large Phones) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .form-control {font-size: 14px;}
+  .form-select {font-size: 14px;}
+  .partner-visual {width: 100%;}
+  .stat_box_new01 p {text-align: center;}
+  .awardInfoGrid_new01 {grid-template-columns: repeat(2, 1fr); gap: 7px; margin-bottom: 16px;}
   .navbar-logo img {width: 80px;}
   .navbar-toggler-icon { background-size: 80%;}
   .navbar-toggler { padding: 0 5px;  border: none;}
@@ -435,7 +458,7 @@
   .contact-item strong {font-weight: 300;}
   .footer-bottom p {font-size: 13px;}
   .bottom-links a {font-size: 13px;}
-  .contact-item svg { width: 18px;height: 18px;}
+  .contact-item svg { height: 18px;}
   .stats-parallax {margin-top: 0px;}
 
   .about-content {text-align: center;}
@@ -457,11 +480,12 @@
   .mediaHub_new01 span {text-align: center;}  
   .mediaHub_new01 h2 {text-align: center;} 
   .mediaHub_new01 p {text-align: center;}
-  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 260px; display: block;}
+  .mediaHub_new01 a {width: 100%;margin: 0 auto; max-width: 100%; display: block; margin-bottom: 20px;}
+  .mediaInfo_new01 h5 {font-size: 14px;}
   .featuredStory_new01, .featuredStory_new01 img {height: 240px; min-height: 240px;}
   .storyOverlay_new01 h3 {font-size: 17px;}
   .storyOverlay_new01 a {padding: 0 !important; margin: 0 !important;width: 130px;}
-  .mediaHub_new01 a {max-width: 100%;}
+  /* .mediaHub_new01 a {max-width: 100%;} */
   .viewAllCard_new01 { height: 200px;}
   .awardContent_new01 h3 { font-size: 16px;}
   .awardContent_new01 p {font-size: 14px; line-height: 23px;}
@@ -536,6 +560,7 @@
 
 /* Medium Devices (Tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {  
+  .partner-visual {min-height: 380px;width: 100%;}
 
   .carousel { height: 600px;}
   .carousel-inner { height: 600px;}  
@@ -635,14 +660,35 @@
 
 /* Desktops */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
     .IntelligenceCanvaPart { left: -95px;}
-    
+    .mediaSide_new01 {padding: 24px;height: 100%;}
+    .mediaCard_new01 { gap: 8px; padding: 10px; margin-bottom: 10px; border-radius: 10px;}
+    .mediaInfo_new01 span {font-size: 14px;}
+    .mediaInfo_new01 h5 {margin-top: 5px;line-height: 16px;font-size: 12px; font-weight: 400; letter-spacing: 0px;}
+    .latestMediaBtn{margin-top: 10px;}
+    .featuredStory_new01 img { width: 100%;height: 520px;}    
+    .articleCard_new01 img {width: 100%; height: 200px;}
+    .articleBody_new01 {padding: 12px;}
+    .articleBody_new01 h5 { line-height: 22px;margin-bottom: 9px; font-size: 14px;min-height: 90px; max-height: 100px;}
+
+    .partner-visual {min-height: 574px;}
+    .globalPresence_new01 { padding: 20px 0;}
 }
 
 /* Large Desktops */
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
-    
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {    
+
+    .IntelligenceCanvaPart { left: -95px;}
+    .mediaSide_new01 {padding: 24px;height: 100%;}
+    .mediaCard_new01 { gap: 8px; padding: 10px; margin-bottom: 10px; border-radius: 10px;}
+    .mediaInfo_new01 span {font-size: 14px;}
+    .mediaInfo_new01 h5 {margin-top: 5px;line-height: 16px;font-size: 12px; font-weight: 400; letter-spacing: 0px;}
+    .latestMediaBtn{margin-top: 10px;}
+    .featuredStory_new01 img { width: 100%;height: 520px;}    
+    .articleCard_new01 img {width: 100%; height: 200px;}
+    .articleBody_new01 {padding: 12px;}
+
+    .partner-visual {min-height: 538px;}
 }
 
 /* Extra Large Screens */
