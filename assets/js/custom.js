@@ -490,6 +490,329 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// Our Partner section==========Start
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.querySelector(".partner-slider");
+
+    if (!slider) return;
+
+
+
+    const track = slider.querySelector(".partner-slider-track");
+
+    const slides = Array.from(
+        slider.querySelectorAll(".partner-logo-card")
+    );
+
+    const nextBtn = slider.querySelector(".partner-next");
+    const prevBtn = slider.querySelector(".partner-prev");
+
+    const mainImage = document.querySelector("#partnerMainImage");
+
+    const currentNumber =
+        document.querySelector("#partnerCurrentNumber");
+
+    const totalNumber =
+        document.querySelector("#partnerTotalNumber");
+
+    const progressBar =
+        slider.querySelector(".progress-line span");
+
+
+    /* ========CHECK========== */
+
+    if (
+        !track ||
+        !slides.length ||
+        !nextBtn ||
+        !prevBtn ||
+        !mainImage
+    ) {
+        return;
+    }
+
+
+    /* ===========VARIABLES======== */
+
+    let currentIndex = 0;
+
+    let autoSlide = null;
+
+    const totalSlides = slides.length;
+
+
+    /* Total number */
+
+    totalNumber.textContent =
+        String(totalSlides).padStart(2, "0");
+
+
+    /* ========GET SLIDE WIDTH=========== */
+
+    function getSlideWidth() {
+
+        if (!slides[0]) return 0;
+
+        const slideStyle =
+            window.getComputedStyle(slides[0]);
+
+        const gap =
+            parseFloat(
+                window.getComputedStyle(track).gap
+            ) || 0;
+
+        return slides[0].getBoundingClientRect().width + gap;
+    }
+
+
+    /* =========UPDATE IMAGE========== */
+
+    function updateImage(index) {
+
+        const selectedSlide = slides[index];
+
+        if (!selectedSlide) return;
+
+        const newImage =
+            selectedSlide.getAttribute("data-image");
+
+        if (!newImage) return;
+
+
+        /* Fade image out */
+
+        mainImage.classList.add("partner-image-changing");
+
+
+        setTimeout(function () {
+
+            mainImage.src = newImage;
+
+            mainImage.onload = function () {
+
+                mainImage.classList.remove(
+                    "partner-image-changing"
+                );
+
+            };
+
+        }, 180);
+
+    }
+
+
+    /* ====================== UPDATE NUMBER=========== */
+
+    function updateNumber(index) {
+        /*
+        * Main image number
+        * Example: 01 / 06
+        */
+        if (currentNumber) {
+            currentNumber.textContent =
+                String(index + 1).padStart(2, "0");
+        }
+
+
+        /*
+        * Slider progress number
+        * Example: 01 → 02 → 03 → 04...
+        */
+        const progressCurrent =
+            slider.querySelector(".progress-current");
+
+        if (progressCurrent) {
+
+            progressCurrent.textContent =
+                String(index + 1).padStart(2, "0");
+
+        }
+
+    }
+
+
+    /* ===================UPDATE PROGRESS========== */
+
+    function updateProgress(index) {
+
+        const percentage =
+            ((index + 1) / totalSlides) * 100;
+
+        progressBar.style.width =
+            percentage + "%";
+
+    }
+
+
+    /* =============MOVE SLIDER========== */
+
+    function moveSlider() {
+
+        const slideWidth = getSlideWidth();
+
+        track.style.transform =
+            `translate3d(-${currentIndex * slideWidth}px, 0, 0)`;
+
+
+        updateImage(currentIndex);
+
+        updateNumber(currentIndex);
+
+        updateProgress(currentIndex);
+
+    }
+
+
+    /* =========NEXT============ */
+
+    function nextSlide() {
+
+        currentIndex++;
+
+        if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        }
+
+        moveSlider();
+
+    }
+
+
+    /* ===========PREVIOUS============ */
+
+    function previousSlide() {
+
+        currentIndex--;
+
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        }
+
+        moveSlider();
+
+    }
+
+
+    /* ==============BUTTONS============= */
+
+    nextBtn.addEventListener("click", function () {
+
+        nextSlide();
+
+        restartAutoSlide();
+
+    });
+
+
+    prevBtn.addEventListener("click", function () {
+
+        previousSlide();
+
+        restartAutoSlide();
+
+    });
+
+
+    /* ===========CLICK ON LOGO CARD======== */
+
+    slides.forEach(function (slide, index) {
+
+        slide.addEventListener("click", function () {
+
+            currentIndex = index;
+
+            moveSlider();
+
+            restartAutoSlide();
+
+        });
+
+    });
+
+
+    /* =========== AUTO SLIDER=========== */
+
+    function startAutoSlide() {
+
+        stopAutoSlide();
+
+        autoSlide = setInterval(function () {
+
+            nextSlide();
+
+        }, 4000);
+
+    }
+
+
+    function stopAutoSlide() {
+
+        if (autoSlide) {
+
+            clearInterval(autoSlide);
+
+            autoSlide = null;
+
+        }
+
+    }
+
+
+    function restartAutoSlide() {
+
+        stopAutoSlide();
+
+        startAutoSlide();
+
+    }
+
+
+    /* =========PAUSE ON HOVER=========== */
+
+    slider.addEventListener(
+        "mouseenter",
+        stopAutoSlide
+    );
+
+
+    slider.addEventListener(
+        "mouseleave",
+        startAutoSlide
+    );
+
+
+    /*==============RESIZE============ */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            moveSlider();
+
+        }
+    );
+
+
+    /* ===============INITIAL STATE======== */
+
+    moveSlider();
+
+    startAutoSlide();
+
+});
+
+// Our Partner section==========End
+
+
+
+// Leadership page ==============start
+
+// Leadership page===============End
+
+
+
 
 
 
