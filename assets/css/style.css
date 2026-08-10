@@ -6562,6 +6562,12 @@ RESPONSIVE
   color: #000;
   margin-bottom: 9px;
 }
+.contactContent_new01 h2 {
+  margin-bottom: 19px;
+}
+.contactContent_new01 p {
+  margin-bottom: 25px;
+}
 
 /* .contactButton_new01 {
   position: absolute;
