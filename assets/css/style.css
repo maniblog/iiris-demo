@@ -190,7 +190,7 @@
 .intelligence-section{
     padding:25px 0;
     overflow:hidden;
-    background-image: url("../images/bg-01.png") !important;
+    background-image: url("../images/bg-01.webp") !important;
     background-color: #96d3f605;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -234,7 +234,7 @@
     height:640px;
     margin:auto;
     position:relative;
-    background:url("../images/circle-bg.png") center center no-repeat;
+    background:url("../images/circle-bg.webp") center center no-repeat;
     background-size:contain;
 }
 
@@ -1011,7 +1011,7 @@
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at top left, rgba(59, 130, 246, .10), transparent 35%), radial-gradient(circle at bottom right, rgba(14, 165, 233, .08), transparent 35%), #f5f9ff;
-      background-image: url(../images/bg-01.png) !important;
+      background-image: url(../images/bg-01.webp) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
@@ -2402,7 +2402,7 @@ RESPONSIVE
     padding: 60px 0;
     overflow: hidden;
     background: radial-gradient(circle at top left, rgba(59, 130, 246, .10), transparent 35%), radial-gradient(circle at bottom right, rgba(14, 165, 233, .08), transparent 35%), #f5f9ff;
-    background-image: url(../images/bg-01.png) !important;
+    background-image: url(../images/bg-01.webp) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
@@ -3214,7 +3214,7 @@ RESPONSIVE
   /* padding: 30px 0; */
   overflow: hidden;
   /* Parallax background */
-  background-image: url('../images/parallax-img.jpg');
+  background-image: url('../images/parallax-img.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -3239,7 +3239,7 @@ RESPONSIVE
   /* opacity: .15; */
   /* background-image: radial-gradient(circle at 20% 30%, transparent 0 22px, rgba(255, 255, 255, .35) 23px 24px, transparent 25px), radial-gradient(circle at 70% 20%, transparent 0 28px, rgba(255, 255, 255, .25) 29px 30px, transparent 31px), radial-gradient(circle at 40% 80%, transparent 0 18px, rgba(255, 255, 255, .30) 19px 20px, transparent 21px), radial-gradient(circle at 85% 70%, transparent 0 24px, rgba(255, 255, 255, .22) 25px 26px, transparent 27px);
   background-size: 260px 260px; */
-  background-image: url(../images/Line-Pattern-1-1.png);
+  background-image: url(../images/Line-Pattern-1-1.webp);
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.9;
@@ -5432,7 +5432,7 @@ RESPONSIVE
   background-repeat: repeat, repeat, repeat;
   background-image: radial-gradient(circle at left top, rgba(59, 130, 246, 0.1), transparent 35%), radial-gradient(circle at right bottom, rgba(14, 165, 233, 0.08), transparent 35%), none;
   background-size: auto, auto, auto;
-  background-image: url(../images/bg-01.png) !important;
+  background-image: url(../images/bg-01.webp) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
@@ -6277,7 +6277,7 @@ RESPONSIVE
   background-repeat: repeat, repeat, repeat;
   background-image: radial-gradient(circle at left top, rgba(59, 130, 246, 0.1), transparent 35%), radial-gradient(circle at right bottom, rgba(14, 165, 233, 0.08), transparent 35%), none;
   background-size: auto, auto, auto;
-  background-image: url(../images/bg-01.png) !important;
+  background-image: url(../images/bg-01.webp) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
