@@ -6562,6 +6562,12 @@ RESPONSIVE
   color: #000;
   margin-bottom: 9px;
 }
+.contactContent_new01 h2 {
+  margin-bottom: 19px;
+}
+.contactContent_new01 p {
+  margin-bottom: 25px;
+}
 
 /* .contactButton_new01 {
   position: absolute;
@@ -6665,7 +6671,7 @@ RESPONSIVE
 
 .partner-image-content h3 span {
   display: block;
-   color: #d5a83b;
+   color: #ffec6f;
   
 }
 
@@ -6683,7 +6689,7 @@ RESPONSIVE
   width: 7px;
   height: 7px;
    border-radius: 50%;
-  background: #d5a83b;
+  background: #ffec6f;
   box-shadow: 0 0 0 5px rgba(213, 168, 59, .12);
   
 }
