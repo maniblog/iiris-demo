@@ -6326,7 +6326,7 @@ RESPONSIVE
 .featureItem_new01 {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
 .featureIcon_new01 {
@@ -6338,7 +6338,7 @@ RESPONSIVE
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0d4fa8;
+  color: #198bcf;
   font-size: 24px;
   margin-right: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
@@ -6347,7 +6347,7 @@ RESPONSIVE
 
 .featureItem_new01:hover .featureIcon_new01 {
   transform: translateY(-5px);
-  background: #0d4fa8;
+  background: #198bcf;
   color: #fff;
 }
 
@@ -6566,6 +6566,9 @@ RESPONSIVE
   margin-bottom: 19px;
 }
 .contactContent_new01 p {
+  /* margin-bottom: 25px; */
+}
+.P_text{
   margin-bottom: 25px;
 }
 

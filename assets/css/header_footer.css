@@ -419,7 +419,7 @@ body{
 }
 
 .social-links a:hover {
-  background: #157dbb;
+  background: transparent;
   border-color: #157dbb;
   transform: translateY(-3px);
 }

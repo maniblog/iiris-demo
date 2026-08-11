@@ -214,6 +214,10 @@
   .career-application-wrap{margin-top: -40px;}
   .life-card-overlay {text-align: left !important;}
 
+  .quote-box_P {padding-top: 30px;}
+  .quote-box_P h2 {font-size: 33px;line-height: 5px;}
+  .locationAdd{height: auto;}
+
 }
 
 
@@ -438,6 +442,10 @@
   .career-join-meta strong {font-size: 12px;}
   .career-application-wrap{margin-top: -40px;}
   .life-card-overlay {text-align: left !important;}
+
+  .quote-box_P {padding-top: 30px;}
+  .quote-box_P h2 {font-size: 33px;line-height: 5px;}
+  .locationAdd{height: auto;}
   
 }
 
@@ -663,6 +671,10 @@
   .career-join-meta strong {font-size: 12px;}
   .career-application-wrap{margin-top: -40px;}
   .life-card-overlay {text-align: left !important;}
+
+  .quote-box_P {padding-top: 30px;}
+  .quote-box_P h2 {font-size: 33px;line-height: 5px;}
+  .locationAdd{height: auto;}
   
 }
 
@@ -759,6 +771,8 @@
   .page-banner h1 {font-size: 28px; margin-top: 0px;}
   .who-banner {height: 250px; width: 100%;  }
 
+  .locationAdd{height: auto;min-height: 350px;}
+  .client-philosophy { padding: 40px 0;}
 }
 
 /* Large Tablets / Small Laptops */
@@ -780,7 +794,9 @@
     .articleBody_new01 h5 { line-height: 22px;margin-bottom: 9px; font-size: 14px;min-height: 90px; max-height: 100px;}
 
     .partner-visual {min-height: 574px;}
-    .globalPresence_new01 { padding: 20px 0;}
+    .globalPresence_new01 { padding: 20px 0;}    
+  .locationAdd{height: 240px;}
+
 }
 
 /* Large Desktops */
