@@ -178,7 +178,45 @@
   .page-banner p {font-size: 13px; line-height: 16px; padding-top: 10px;}
   .team-content p {font-size: 13px; }
   .iiris-team-section {padding: 30px 0 30px;}
+
+  .page-banner p {font-size: 14px; line-height: 20px;padding-top: 11px;}
+  .page-banner h1 {font-size: 20px !important; font-weight: 500;line-height: 23px;}
+  .career-hero { padding: 30px 0; text-align: center;}
+  .career-eyebrow {display: block;}
+  .career-hero h1 { font-size: 18px; letter-spacing: 0; line-height: 23px;}
+  .career-hero h1 strong{display: inline;}
+  .career-hero p { margin: 11px; font-size: 14px; line-height: 23px; text-align: center;}
+  .career-hero-actions a {width: 100%;font-size: 14px; font-weight: 400;}
+  .career-visual{ margin-top: 30px;}
+  .career-image-main {width: 100%;}
+  .career-image-small {display: none;}
+  .life-section, .benefits-section, .jobs-section{ padding: 30px 0; text-align: center;}
+  .life-section h1{ font-size: 18px;}  
+  .life-section p{ font-size: 14px; text-align: center;}
+  .jobs-heading h1 { font-size: 18px;}
+  .jobs-count { margin-top: 20px; text-align: center; }
+  .job-filter select {line-height: 32px;}
+  .job-filter a {width:100%; font-weight: 400;}
+  .career-join-intro h2 {text-align: center; font-size: 18px; letter-spacing: 0.1px;}
+  .career-join-section { padding: 30px 0;}
+  .career-join-intro::before {display: none;}
+  /* .career-join-layout {text-align: center;} */
+  .career-join-intro {padding: 0;}
+  .career-join-intro p {text-align: center; margin: 12px 0;}
+  .career-application-card {padding: 15px;}
+  .career-join-intro div { text-align: center;margin: 0 auto; margin-top: 7px;}
+  .application-top h3 {font-size: 16px;}
+  .application-label {font-size: 12px; font-weight: 500;}
+  .job-main {text-align: left !important;}
+  .application-description {text-align: left;}
+  .career-join-meta span { color: #657b8b; font-size: 12px;}
+  .career-join-meta strong {font-size: 12px;}
+  .career-application-wrap{margin-top: -40px;}
+  .life-card-overlay {text-align: left !important;}
+
 }
+
+
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .form-control {font-size: 14px;}
   .form-select {font-size: 14px;}
@@ -365,6 +403,41 @@
   .purpose-content {margin-top: 20px;}
   .about-cta {margin-top: 20px;}
   .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
+
+  .page-banner p {font-size: 14px; line-height: 20px;padding-top: 11px;}
+  .page-banner h1 {font-size: 20px !important; font-weight: 500;line-height: 23px;}
+  .career-hero { padding: 30px 0; text-align: center;}
+  .career-eyebrow {display: block;}
+  .career-hero h1 { font-size: 18px; letter-spacing: 0; line-height: 23px;}
+  .career-hero h1 strong{display: inline;}
+  .career-hero p { margin: 11px; font-size: 14px; line-height: 23px; text-align: center;}
+  .career-hero-actions a {width: 100%;font-size: 14px; font-weight: 400;}
+  .career-visual{ margin-top: 30px;}
+  .career-image-main {width: 100%;}
+  .career-image-small {display: none;}
+  .life-section, .benefits-section, .jobs-section{ padding: 30px 0; text-align: center;}
+  .life-section h1{ font-size: 18px;}  
+  .life-section p{ font-size: 14px; text-align: center;}
+  .jobs-heading h1 { font-size: 18px;}
+  .jobs-count { margin-top: 20px; text-align: center; }
+  .job-filter select {line-height: 32px;}
+  .job-filter a {width:100%; font-weight: 400;}
+  .career-join-intro h2 {text-align: center; font-size: 18px; letter-spacing: 0.1px;}
+  .career-join-section { padding: 30px 0;}
+  .career-join-intro::before {display: none;}
+  /* .career-join-layout {text-align: center;} */
+  .career-join-intro {padding: 0;}
+  .career-join-intro p {text-align: center; margin: 12px 0;}
+  .career-application-card {padding: 15px;}
+  .career-join-intro div { text-align: center;margin: 0 auto; margin-top: 7px;}
+  .application-top h3 {font-size: 16px;}
+  .application-label {font-size: 12px; font-weight: 500;}
+  .job-main {text-align: left !important;}
+  .application-description {text-align: left;}
+  .career-join-meta span { color: #657b8b; font-size: 12px;}
+  .career-join-meta strong {font-size: 12px;}
+  .career-application-wrap{margin-top: -40px;}
+  .life-card-overlay {text-align: left !important;}
   
 }
 
@@ -555,6 +628,41 @@
   .purpose-content {margin-top: 20px;}
   .about-cta {margin-top: 20px;}
   .cta-content p {margin: 13px 0 38px;font-size: 14px;line-height: 25px;text-align: center;}
+
+  .page-banner p {font-size: 14px; line-height: 20px;padding-top: 11px;}
+  .page-banner h1 {font-size: 20px !important; font-weight: 500;line-height: 23px;}
+  .career-hero { padding: 30px 0; text-align: center;}
+  .career-eyebrow {display: block;}
+  .career-hero h1 { font-size: 18px; letter-spacing: 0; line-height: 23px;}
+  .career-hero h1 strong{display: inline;}
+  .career-hero p { margin: 11px; font-size: 14px; line-height: 23px; text-align: center;}
+  .career-hero-actions a {width: 100%;font-size: 14px; font-weight: 400;}
+  .career-visual{ margin-top: 30px;}
+  .career-image-main {width: 100%;}
+  .career-image-small {display: none;}
+  .life-section, .benefits-section, .jobs-section{ padding: 30px 0; text-align: center;}
+  .life-section h1{ font-size: 18px;}  
+  .life-section p{ font-size: 14px; text-align: center;}
+  .jobs-heading h1 { font-size: 18px;}
+  .jobs-count { margin-top: 20px; text-align: center; }
+  .job-filter select {line-height: 32px;}
+  .job-filter a {width:100%; font-weight: 400;}
+  .career-join-intro h2 {text-align: center; font-size: 18px; letter-spacing: 0.1px;}
+  .career-join-section { padding: 30px 0;}
+  .career-join-intro::before {display: none;}
+  /* .career-join-layout {text-align: center;} */
+  .career-join-intro {padding: 0;}
+  .career-join-intro p {text-align: center; margin: 12px 0;}
+  .career-application-card {padding: 15px;}
+  .career-join-intro div { text-align: center;margin: 0 auto; margin-top: 7px;}
+  .application-top h3 {font-size: 16px;}
+  .application-label {font-size: 12px; font-weight: 500;}
+  .job-main {text-align: left !important;}
+  .application-description {text-align: left;}
+  .career-join-meta span { color: #657b8b; font-size: 12px;}
+  .career-join-meta strong {font-size: 12px;}
+  .career-application-wrap{margin-top: -40px;}
+  .life-card-overlay {text-align: left !important;}
   
 }
 

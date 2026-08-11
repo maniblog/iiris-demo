@@ -1,41 +1,47 @@
+
+
+// back to top page ==============start
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+// back to top page===============End
+
+
 // Sticky Navbar
-
 window.addEventListener("scroll", function () {
-
     const navbar = document.querySelector(".custom-navbar");
-
     if (window.scrollY > 80) {
-
         navbar.classList.add("scrolled");
-
     } else {
-
         navbar.classList.remove("scrolled");
-
     }
-
 });
 
 // Slider
-
 const heroSlider = document.querySelector("#heroSlider");
-
 new bootstrap.Carousel(heroSlider, {
-
     interval: 5000,
     pause: false,
     ride: "carousel",
     touch: true
-
 });
-
-
-
-
 
 // Our Intelligence. Your Advantage. -------------------- start
 $(function () {
-
     // Data for each segment
     const wheelData = {
 
@@ -278,12 +284,7 @@ $(function () {
     if (typeof lucide !== "undefined") {
          lucide.createIcons(); 
     }
-
-
 });
-
-
-
 
 const buttons = document.querySelectorAll(".accordion-button");
 const contents = document.querySelectorAll(".content-box_tab");
@@ -350,25 +351,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const awardRegion = document.getElementById("awardRegion_new01");
   const awardType = document.getElementById("awardType_new01");
 
-
-
   thumbs.forEach(function(thumb) {
-
     thumb.addEventListener("click", function() {
-
       // Remove Active Class
-
       thumbs.forEach(function(item) {
-
         item.classList.remove("active_new01");
-
       });
-
       this.classList.add("active_new01");
-
-
       // Get Data
-
       const image = this.getAttribute("data-image");
       const title = this.getAttribute("data-title");
       const description = this.getAttribute("data-description");
@@ -377,13 +367,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const by = this.getAttribute("data-by");
       const region = this.getAttribute("data-region");
       const type = this.getAttribute("data-type");
-
-
-
       // Fade Out
-
       const elements = [
-
         awardImage,
         awardTitle,
         awardDescription,
@@ -402,45 +387,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
       });
 
-
-
       // Change Data
-
       setTimeout(function() {
-
         awardImage.src = image;
-
         awardTitle.innerHTML = title;
-
         awardDescription.innerHTML = description;
-
         awardCategory.innerHTML = category;
-
         awardYear.innerHTML = year;
-
         awardBy.innerHTML = by;
-
         awardRegion.innerHTML = region;
-
         awardType.innerHTML = type;
 
-
-
         // Fade In
-
         elements.forEach(function(el) {
-
           el.style.opacity = "1";
           el.style.transform = "translateY(0)";
-
         });
-
       }, 300);
-
     });
-
   });
-
 });
 
 // Award Section===================End
@@ -448,17 +413,11 @@ document.addEventListener("DOMContentLoaded", function() {
 // WHY CHOOSE IIRIS js==================Start
 
 document.querySelectorAll(".flipCard_flip3d").forEach(function(card){
-
     card.addEventListener("click",function(){
-
         if(window.innerWidth <= 991){
-
             card.classList.toggle("active");
-
         }
-
     });
-
 });
 
 // WHY CHOOSE IIRIS Js=================End
@@ -493,24 +452,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // Our Partner section==========Start
 
 document.addEventListener("DOMContentLoaded", function () {
-
     const slider = document.querySelector(".partner-slider");
-
     if (!slider) return;
-
-
-
     const track = slider.querySelector(".partner-slider-track");
-
     const slides = Array.from(
         slider.querySelectorAll(".partner-logo-card")
     );
 
     const nextBtn = slider.querySelector(".partner-next");
     const prevBtn = slider.querySelector(".partner-prev");
-
     const mainImage = document.querySelector("#partnerMainImage");
-
     const currentNumber =
         document.querySelector("#partnerCurrentNumber");
 
@@ -519,8 +470,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const progressBar =
         slider.querySelector(".progress-line span");
-
-
     /* ========CHECK========== */
 
     if (
@@ -532,29 +481,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
         return;
     }
-
-
     /* ===========VARIABLES======== */
 
     let currentIndex = 0;
-
     let autoSlide = null;
-
     const totalSlides = slides.length;
-
-
     /* Total number */
 
     totalNumber.textContent =
         String(totalSlides).padStart(2, "0");
-
-
     /* ========GET SLIDE WIDTH=========== */
 
     function getSlideWidth() {
-
         if (!slides[0]) return 0;
-
         const slideStyle =
             window.getComputedStyle(slides[0]);
 
@@ -566,30 +505,21 @@ document.addEventListener("DOMContentLoaded", function () {
         return slides[0].getBoundingClientRect().width + gap;
     }
 
-
     /* =========UPDATE IMAGE========== */
 
     function updateImage(index) {
-
         const selectedSlide = slides[index];
-
         if (!selectedSlide) return;
-
         const newImage =
             selectedSlide.getAttribute("data-image");
-
         if (!newImage) return;
-
 
         /* Fade image out */
 
         mainImage.classList.add("partner-image-changing");
 
-
         setTimeout(function () {
-
             mainImage.src = newImage;
-
             mainImage.onload = function () {
 
                 mainImage.classList.remove(
@@ -632,142 +562,100 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
     /* ===================UPDATE PROGRESS========== */
 
     function updateProgress(index) {
-
         const percentage =
             ((index + 1) / totalSlides) * 100;
-
         progressBar.style.width =
             percentage + "%";
-
     }
 
 
     /* =============MOVE SLIDER========== */
 
     function moveSlider() {
-
         const slideWidth = getSlideWidth();
-
         track.style.transform =
             `translate3d(-${currentIndex * slideWidth}px, 0, 0)`;
 
-
         updateImage(currentIndex);
-
         updateNumber(currentIndex);
-
         updateProgress(currentIndex);
-
     }
 
 
     /* =========NEXT============ */
 
     function nextSlide() {
-
         currentIndex++;
 
         if (currentIndex >= totalSlides) {
             currentIndex = 0;
         }
-
         moveSlider();
-
     }
 
 
     /* ===========PREVIOUS============ */
 
     function previousSlide() {
-
         currentIndex--;
 
         if (currentIndex < 0) {
             currentIndex = totalSlides - 1;
         }
-
         moveSlider();
-
     }
 
 
     /* ==============BUTTONS============= */
 
     nextBtn.addEventListener("click", function () {
-
         nextSlide();
-
         restartAutoSlide();
-
     });
 
 
     prevBtn.addEventListener("click", function () {
-
         previousSlide();
-
         restartAutoSlide();
-
     });
 
 
     /* ===========CLICK ON LOGO CARD======== */
 
     slides.forEach(function (slide, index) {
-
         slide.addEventListener("click", function () {
-
             currentIndex = index;
-
             moveSlider();
-
             restartAutoSlide();
-
         });
-
     });
 
 
     /* =========== AUTO SLIDER=========== */
 
     function startAutoSlide() {
-
         stopAutoSlide();
-
         autoSlide = setInterval(function () {
-
             nextSlide();
-
         }, 4000);
-
     }
 
 
     function stopAutoSlide() {
-
         if (autoSlide) {
-
             clearInterval(autoSlide);
-
             autoSlide = null;
-
         }
-
     }
 
 
     function restartAutoSlide() {
-
         stopAutoSlide();
-
         startAutoSlide();
-
     }
-
 
     /* =========PAUSE ON HOVER=========== */
 
@@ -776,40 +664,27 @@ document.addEventListener("DOMContentLoaded", function () {
         stopAutoSlide
     );
 
-
     slider.addEventListener(
         "mouseleave",
         startAutoSlide
     );
-
 
     /*==============RESIZE============ */
 
     window.addEventListener(
         "resize",
         function () {
-
             moveSlider();
-
         }
     );
-
 
     /* ===============INITIAL STATE======== */
 
     moveSlider();
-
     startAutoSlide();
-
 });
 
 // Our Partner section==========End
-
-
-
-// Leadership page ==============start
-
-// Leadership page===============End
 
 
 

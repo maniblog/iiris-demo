@@ -305,35 +305,6 @@ body{
 .close-search svg:hover {
   stroke: #198bcf;
 }
-/*
-
-.icon-btn{
-
-    color:#fff;
-
-    width:42px;
-
-    height:42px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-decoration:none;
-
-    font-size:22px;
-
-    transition:.3s;
-}
-
-.icon-btn:hover{
-
-    color:#0c8eff;
-}
-*/
-
 
 /* Footer============================Start */
 
@@ -630,3 +601,62 @@ body{
 }
 
 /* Footer===========================End */
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   border: 2px solid #198bcf;
+  border-radius: 50%;
+  background: transparent;
+  color: #198bcf;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(15px);
+    transition: all 0.35s ease;
+
+    cursor: pointer;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #078dcc;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 575px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        width: 42px;
+        height: 42px;
+    }
+}
+/* .back-to-top::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px solid #198bcf;
+    border-radius: 50%;
+    opacity: .5;
+    pointer-events: none;
+} */
