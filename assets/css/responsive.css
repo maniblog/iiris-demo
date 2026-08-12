@@ -218,6 +218,32 @@
   .quote-box_P h2 {font-size: 33px;line-height: 5px;}
   .locationAdd{height: auto;}
 
+  .page-banner {height: 240px;}
+
+  .for_headerText {height: 240px;}
+  .for_headerText h1 {font-size: 20px !important; font-weight: 500; line-height: 23px;  margin-top: -15px; }
+  .for_headerText p {font-size: 14px; line-height: 20px; padding-top: 11px;}
+  .flat-spacing {padding-top: 30px; padding-bottom: 30px;}
+  .form-title {font-size: 18px; margin-bottom: 5px;}
+  .info-desc {font-size: 13px !important;line-height: 18px !important;}
+  .info-title { font-size: 18px;margin-bottom: 5px;}
+  .location_Part h3 {font-size: 17px;margin-bottom: 12px;}
+  .location_Part p { font-size: 13px;}
+  .nav-tabs_02 {gap: 10px; padding: 10px;}
+  .col_4_custom {padding-right: calc(var(--bs-gutter-x) * .5) !important;}
+  .col_8_custom {padding-left: calc(var(--bs-gutter-x) * .5) !important;}
+  .address_section01 {border-radius: 15px 15px 0 0;}
+  .map_section01 {border-radius: 0  0 15px 15px;}
+  .leader_adv { min-width: 100%;}
+  .team_heading h3 { font-size: 21px;}
+  .team-filter-wrap { margin-bottom: 13px;}
+
+  .for_headerText02 {height: 310px;}
+  .life-heading { margin-bottom: 15px;}
+  .life-card { height: auto;}
+  .job-meta span { display: block;}
+  #jobsCount { text-align: center;}
+
 }
 
 
@@ -446,6 +472,33 @@
   .quote-box_P {padding-top: 30px;}
   .quote-box_P h2 {font-size: 33px;line-height: 5px;}
   .locationAdd{height: auto;}
+  .locationAdd{height: auto;}
+
+  .page-banner {height: 240px;}
+
+  .for_headerText {height: 240px;}
+  .for_headerText h1 {font-size: 20px !important; font-weight: 500; line-height: 23px;  margin-top: -15px; }
+  .for_headerText p {font-size: 14px; line-height: 20px; padding-top: 11px;}
+  .flat-spacing {padding-top: 30px; padding-bottom: 30px;}
+  .form-title {font-size: 18px; margin-bottom: 5px;}
+  .info-desc {font-size: 13px !important;line-height: 18px !important;}
+  .info-title { font-size: 18px;margin-bottom: 5px;}
+  .location_Part h3 {font-size: 17px;margin-bottom: 12px;}
+  .location_Part p { font-size: 13px;}
+  .nav-tabs_02 {gap: 10px; padding: 10px;}
+  .col_4_custom {padding-right: calc(var(--bs-gutter-x) * .5) !important;}
+  .col_8_custom {padding-left: calc(var(--bs-gutter-x) * .5) !important;}
+  .address_section01 {border-radius: 15px 15px 0 0;}
+  .map_section01 {border-radius: 0  0 15px 15px;} 
+  .leader_adv { min-width: 100%;}
+  .team_heading h3 { font-size: 21px;}
+  .team-filter-wrap { margin-bottom: 13px;}
+
+  .for_headerText02 {height: 310px;}
+  .life-heading { margin-bottom: 15px;}
+  .life-card { height: auto;}
+  .job-meta span { display: block;}
+  #jobsCount { text-align: center;}
   
 }
 
@@ -675,6 +728,33 @@
   .quote-box_P {padding-top: 30px;}
   .quote-box_P h2 {font-size: 33px;line-height: 5px;}
   .locationAdd{height: auto;}
+  .locationAdd{height: auto;}
+
+  .page-banner {height: 240px;}
+
+  .for_headerText {height: 240px;}
+  .for_headerText h1 {font-size: 20px !important; font-weight: 500; line-height: 23px;  margin-top: -15px; }
+  .for_headerText p {font-size: 14px; line-height: 20px; padding-top: 11px;}
+  .flat-spacing {padding-top: 30px; padding-bottom: 30px;}
+  .form-title {font-size: 18px; margin-bottom: 5px;}
+  .info-desc {font-size: 13px !important;line-height: 18px !important;}
+  .info-title { font-size: 18px;margin-bottom: 5px;}
+  .location_Part h3 {font-size: 17px;margin-bottom: 12px;}
+  .location_Part p { font-size: 13px;}
+  .nav-tabs_02 {gap: 10px; padding: 10px;}
+  .col_4_custom {padding-right: calc(var(--bs-gutter-x) * .5) !important;}
+  .col_8_custom {padding-left: calc(var(--bs-gutter-x) * .5) !important;}
+  .address_section01 {border-radius: 15px 15px 0 0;}
+  .map_section01 {border-radius: 0  0 15px 15px;}
+  .leader_adv { min-width: 100%;}
+  .team_heading h3 { font-size: 21px;}
+  .team-filter-wrap { margin-bottom: 13px;}
+
+  .for_headerText02 {height: 310px;}
+  .life-heading { margin-bottom: 15px;}
+  .life-card { height: auto;}
+  .job-meta span { display: block;}
+  #jobsCount { text-align: center;}
   
 }
 
@@ -773,6 +853,10 @@
 
   .locationAdd{height: auto;min-height: 350px;}
   .client-philosophy { padding: 40px 0;}
+
+  .nav-tabs_02 .nav-link {padding: 14px 2px !important;}
+  .leader_adv {min-width: 80%;}
+  .thumb-info-title {font-size: 20px; height: 80px; display: block;}
 }
 
 /* Large Tablets / Small Laptops */

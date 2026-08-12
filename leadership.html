@@ -48,8 +48,8 @@
                         <ul class="submenu">
                             <li><a href="about-us.html">Our Story</a></li>
                             <li><a href="leadership.html">Leadership</a></li>
-                            <li><a href="#">Our Presence</a></li>
-                            <li><a href="#">Community</a></li>
+                            <li><a href="presence.html">Our Presence</a></li>
+                            <li><a href="community.html">Community</a></li>
                         </ul>
                     </li>
 
@@ -59,13 +59,13 @@
                         </a>
 
                         <ul class="submenu">
-                            <li><a href="#">Solution</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="solution.html">Solution</a></li>
+                            <li><a href="services.html">Services</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown-menu-custom">
-                        <a href="#" class="nav-link">
+                        <a href="insights" class="nav-link">
                             Insights 
                         </a>
                     </li>
@@ -76,9 +76,9 @@
                         </a>
 
                         <ul class="submenu">
-                            <li><a href="#">In the Media</a></li>
-                            <li><a href="#">Press release</a></li>
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="media.html">In the Media</a></li>
+                            <li><a href="press.html">Press release</a></li>
+                            <li><a href="blog.html">Blogs</a></li>
                         </ul>
                     </li>
 
@@ -153,22 +153,68 @@
         </div>
     </nav>		
     <!-- Menu End here -->
-    <section class="page-banner">
+    <section class="leadership_pageBanner for_headerText">
         <div class="banner-overlay"></div>
 
         <!-- Decorative SVG -->
-        <div class="banner-svg">
-            <!-- <img src="assets/images/internal_page/50.webp"/> -->
-        </div>
+        <!-- <div class="banner-svg"></div> -->
 
         <div class="container">
             <h1>Leadership</h1>
             <p>Our leadership combines deep expertise and innovation to turn complex risks into strategic opportunities.</p>
         </div>
+
+        <div class="bread-wrap trail-items">
+            <span class="item-breadcrumb trail-item trail-begin">
+                <a href="index.html" rel="home"><span>Home</span></a>
+            </span>
+            <span class="sep dot">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </span>
+            <span class="item-breadcrumb trail-item trail-end">
+                <span>
+                    <span>Leadership</span>
+                </span>
+            </span>
+        </div>
+
     </section>
 
     <!-- Your contente Start here -->
     <div class="content-area-start">
+        <section class="section-leadership">
+            <div class="container">
+                <div class="text-center heading_part mb-5">
+                    <!-- <span class="section-subtitle">WHY CHOOSE IIRIS</span> -->
+                    <h2 class="main-title">
+                        Meet Our Team Members
+                    </h2>
+                    <p class="main-desc">Each one of us at IIRIS is a Value Catalyst for whom furthering client business in the most effective manner is the solo aim. Backed by a team of global industry leaders, IIRIS comes armed both with technical know-how and multi jurisdiction expertise.</p>
+                </div>
+                <div class="row gy-5">
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="filter-section">
+            <div class="filter-container">
+                <div class="filter-top">
+                    <h3>FILTER BY</h3> <button type="button" class="clear-filter" id="clearFilters"> Clear All </button> </div>
+                <div class="filter-row">
+                    <div class="filter-item"> <label for="industry">Industry</label>
+                        <div class="select-wrap"> <select id="industry"> <option value="">Choose an Industry</option> <option value="banking">Banking & Financial Services</option> <option value="technology">Technology</option> <option value="healthcare">Healthcare</option> <option value="manufacturing">Manufacturing</option> </select>                    </div>
+                    </div>
+                    <div class="filter-item"> <label for="capability">Capability</label>
+                        <div class="select-wrap"> <select id="capability"> <option value="">Choose a Capability</option> <option value="risk">Risk Management</option> <option value="intelligence">Intelligence</option> <option value="security">Security Solutions</option> <option value="compliance">Compliance</option> </select>                    </div>
+                    </div>
+                    <div class="filter-item"> <label for="location">Locations</label>
+                        <div class="select-wrap"> <select id="location"> <option value="">Choose a Location</option> <option value="india">India</option> <option value="uae">UAE</option> <option value="singapore">Singapore</option> <option value="nigeria">Nigeria</option> </select> </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
         <section class="iiris-team-section">
             <div class="container">
@@ -185,37 +231,30 @@
                         <li>
                             <button type="button" class="team-filter-btn" data-filter="leaders">Our Leaders</button>
                         </li>
-
-                        <!-- <li>
-                            <button type="button" class="team-filter-btn" data-filter="development">DEVELOPMENT</button>
-                        </li>
-
-                        <li>
-                            <button type="button" class="team-filter-btn" data-filter="design">DESIGN</button>
-                        </li> -->
                     </ul>
                 </div>
 
                 <div class="row g-4 team-grid">
                     <div class="col-sm-12 team-item team_heading" data-category="advisors">
                         <h3>Board Of Advisors</h3>
+                        <hr class="leader_adv">
                     </div>
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='#0'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team01.webp" alt="Dr. Vikram Singh" />
+                                <img src="assets/images/internal_page/team01.webp" alt="Dr. Vikram Singh">
+                            </div>
+
+                            <div class="team-content">                                
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Dr. Vikram Singh</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Dr. Vikram Singh is one of India’s most decorated IPS officers, recognised for his leadership, courage, and transformative policing...</p>
-                                <a href="#" class="learn-more learnMore_01" data-bs-toggle="modal" data-bs-target="#team01_Modal">
+                                <!-- <a href="https://iirisconsulting.com/team/" class="learn-more learnMore_01" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a> -->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -304,22 +343,22 @@
                     <!-- model End -->
 
 
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team02.webp" alt="Lt. Gen. (Dr.) Rajesh Pant" />
+                                <img src="assets/images/internal_page/team02.webp" alt="Lt. Gen. (Dr.) Rajesh Pant">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Lt. Gen. (Dr.) Rajesh Pant</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Lt. Gen. (Dr.) Rajesh Pant is an internationally renowned expert in cybersecurity governance and digital risk strategy...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -335,22 +374,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team03.webp" alt="Late Maj Maroof Raza" />
+                                <img src="assets/images/internal_page/team03.webp" alt="Late Maj Maroof Raza">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Late Maj Maroof Raza</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Late Maroof Raza was a leading voice on national security, strategic affairs, and geopolitical risk, with over two decades of experience as a defence analyst, former soldier, author, and media commentator....</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -366,22 +405,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team04.webp" alt="Ambassador Gurjit Singh" />
+                                <img src="assets/images/internal_page/team04.webp" alt="Ambassador Gurjit Singh">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Ambassador Gurjit Singh</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Ambassador Gurjit Singh is a veteran Indian diplomat with 37 years of distinguished service in the Indian Foreign Service, known for deepening India’s strategic...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -397,22 +436,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team05.webp" alt="Anuj Bharadwaj" />
+                                <img src="assets/images/internal_page/team05.webp" alt="Anuj Bharadwaj">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Anuj Bharadwaj</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Anuj Bhardwaj is a highly respected national security professional with over four decades of experience in military operations, counter-terrorism, ...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -428,22 +467,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team06.webp" alt="Sanjay Dwivedi" />
+                                <img src="assets/images/internal_page/team06.webp" alt="Sanjay Dwivedi">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Sanjay Dwivedi</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Sanjay Dwivedi is a seasoned forensic investigations expert and one of India’s leading voices in corporate risk, forensic accounting, and financial...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -459,22 +498,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team07.webp" alt="Rodney D. Ryder" />
+                                <img src="assets/images/internal_page/team07.webp" alt="Rodney D. Ryder">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Rodney D. Ryder</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Rodney D. Ryder is a distinguished legal advisor and thought leader in the fields of cyber law, digital forensics, and data protection...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -490,22 +529,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team08.webp" alt="D. K. Rustagi" />
+                                <img src="assets/images/internal_page/team08.webp" alt="D. K. Rustagi">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">D. K. Rustagi</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>D. K. Rustagi is a veteran design and project management expert with over 40 years of experience across infrastructure, sustainable architecture...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -521,22 +560,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team09.webp" alt="Pramod Panda" />
+                                <img src="assets/images/internal_page/team09.webp" alt="Pramod Panda">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Pramod Panda</span>
                                     <span class="thumb-info-type">Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Mr. Pramod Panda is a distinguished central banking leader with decades of experience in financial sector regulation, supervisory...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -552,22 +591,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team10.webp" alt="Arun Seth" />
+                                <img src="assets/images/internal_page/team10.webp" alt="Arun Seth">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Arun Seth</span>
                                     <span class="thumb-info-type">Senior Advisory Leader</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Mr. Arun Seth is a seasoned business leader and strategic advisor with over four decades of experience spanning telecommunications...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -583,22 +622,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team11.webp" alt="Barry Wilkins" />
+                                <img src="assets/images/internal_page/team11.webp" alt="Barry Wilkins">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Barry Wilkins</span>
                                     <span class="thumb-info-type">Board of Advisor – Advisory Leader USA</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Barry Wilkins brings decades of experience in human resource security, physical and supply chain security, and information risk management...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -614,22 +653,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team12.webp" alt="Stephen Peter Swain" />
+                                <img src="assets/images/internal_page/team12.webp" alt="Stephen Peter Swain">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Stephen Peter Swain</span>
                                     <span class="thumb-info-type">Leading Advisor – EU</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Stephen Peter Swain is a seasoned security strategist and CBRNE expert with decades of leadership across policing, consultancy, and EU-level research...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -645,22 +684,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team13.webp" alt="Col. Kavil Mohan" />
+                                <img src="assets/images/internal_page/team13.webp" alt="Col. Kavil Mohan">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Col. Kavil Mohan</span>
                                     <span class="thumb-info-type">Senior Member, Board of Advisors</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Col. Kavil Mohan is a decorated Special Forces veteran with 28 years of service across India and global conflict zones, including six years in senior...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -676,22 +715,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team14.webp" alt="Ajay Goyal" />
+                                <img src="assets/images/internal_page/team14.webp" alt="Ajay Goyal">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Ajay Goyal</span>
                                     <span class="thumb-info-type">Senior Member, Board of Advisors</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Ajay Goyal is a distinguished officer of the 1990 batch of the Indian Revenue Service (IRS), who retired from active government service in January 2025...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -707,22 +746,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team15.webp" alt="Maj. General Salihu Z. Uba" />
+                                <img src="assets/images/internal_page/team15.webp" alt="Maj. General Salihu Z. Uba">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Maj. General Salihu Z. Uba</span>
                                     <span class="thumb-info-type">Board of Advisor, Nigeria</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Maj. General Salihu Z. Uba, Nigeria Board of Advisor at IIRIS, has a distinguished military career with advanced degrees in Strategic Studies and Business...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -738,22 +777,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team16.webp" alt="Dr. Willie Aziegbe ESELEBOR" />
+                                <img src="assets/images/internal_page/team16.webp" alt="Dr. Willie Aziegbe ESELEBOR">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Dr. Willie Aziegbe ESELEBOR</span>
                                     <span class="thumb-info-type">Board of Advisor, Nigeria</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Dr. Willie Aziegbe Eselebor, Nigeria Board of Advisor at IIRIS. A seasoned expert in negotiation, mediation, and border governance, he has trained...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -769,22 +808,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="advisors">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="advisors">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/team17.webp" alt="Segun H. Olugbile, Amb(Hon.)" />
+                                <img src="assets/images/internal_page/team17.webp" alt="Segun H. Olugbile, Amb(Hon.)">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Segun H. Olugbile, Amb(Hon.)</span>
                                     <span class="thumb-info-type">Board of Advisor, Nigeria</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Segun H. Olugbile, Amb(Hon.), Nigeria Board of Advisor at IIRIS. A Cybersecurity Policy Advisor and certified Data Protection and IT practitioner...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -803,25 +842,26 @@
                     <!-- Leader part -->
                     
                     <div class="col-sm-12 team-item team_heading" data-category="leaders">
-                        <h3>Our Leaders</h3>
+                        <h3>Our Leaders</h3>                        
+                        <hr class="leader_adv">
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team01.webp" alt="Garry Singh" />
+                                <img src="assets/images/internal_page/L_team01.webp" alt="Garry Singh">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Garry Singh</span>
                                     <span class="thumb-info-type">President</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Garry Singh serves as the President of IIRIS, bringing over two decades of deep-rooted experience in enterprise risk management, security strategy...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -837,22 +877,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team02.webp" alt="Sagarika Chakraborty" />
+                                <img src="assets/images/internal_page/L_team02.webp" alt="Sagarika Chakraborty">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Sagarika Chakraborty</span>
                                     <span class="thumb-info-type">CEO - India & Gulf</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Sagarika Chakraborty leads IIRIS operations across India and the Gulf, with a strong foundation in law, investigative practice, and strategic risk consulting...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -868,22 +908,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team03.webp" alt="Kunal Bhogal" />
+                                <img src="assets/images/internal_page/L_team03.webp" alt="Kunal Bhogal">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Kunal Bhogal</span>
                                     <span class="thumb-info-type">COO</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Kunal Bhogal is a SABRE Registered Professional and the Chief Design Officer at IIRIS, where he leads the firm’s Design, Engineering, and Technology...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -899,22 +939,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team04.webp" alt="Ashok Kumar" />
+                                <img src="assets/images/internal_page/L_team04.webp" alt="Ashok Kumar">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Ashok Kumar</span>
                                     <span class="thumb-info-type">CEO, Intelli Future</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Ashok Kumar is a seasoned technology leader with over two decades of experience driving digital transformation, operational excellence...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -930,22 +970,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team05.webp" alt="Maj Paul Devassy" />
+                                <img src="assets/images/internal_page/L_team05.webp" alt="Maj Paul Devassy">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Maj Paul Devassy</span>
                                     <span class="thumb-info-type">CEO - IIRIS Knowledge</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Paul Devassy serves as the Chief Executive Officer of IIRIS Knowledge, bringing over three decades of distinguished experience across risk management...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -961,22 +1001,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team06.webp" alt="Satyagopal Bhanja" />
+                                <img src="assets/images/internal_page/L_team06.webp" alt="Satyagopal Bhanja">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Satyagopal Bhanja</span>
                                     <span class="thumb-info-type">CEO - Africa</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Satyagopal Bhanja is a seasoned professional with over two decades of experience in risk management, internal audit, and corporate governance. As CEO...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -992,22 +1032,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team07.webp" alt="Asitav Sinha" />
+                                <img src="assets/images/internal_page/L_team07.webp" alt="Asitav Sinha">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Asitav Sinha</span>
                                     <span class="thumb-info-type">Senior Consultant, Strategy</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
-                                <p>Asitav Sinha serves as Vice President – Strategy & Infrastructure at IIRIS, leveraging his extensive background in strategic consulting, cross-border M&A...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <p>Asitav Sinha serves as Vice President – Strategy &amp; Infrastructure at IIRIS, leveraging his extensive background in strategic consulting, cross-border M&amp;A...</p>
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1023,22 +1063,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team08.webp" alt="Ranjit Mallik" />
+                                <img src="assets/images/internal_page/L_team08.webp" alt="Ranjit Mallik">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Ranjit Mallik</span>
                                     <span class="thumb-info-type">Senior Consultant – Business Development</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Ranjit Malik serves as Senior Consultant, Business Development at IIRIS, bringing over 35 years of experience across banking, financial crime compliance...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1054,22 +1094,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team09.webp" alt="Sunil Sood" />
+                                <img src="assets/images/internal_page/L_team09.webp" alt="Sunil Sood">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Sunil Sood</span>
                                     <span class="thumb-info-type">Vice President, Intellisense</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Sunil Sood is a seasoned specialist in corporate fraud investigations, financial due diligence, and regulatory compliance. With over two decades diverse...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1085,22 +1125,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team10.webp" alt="Nurudeen Abubakar" />
+                                <img src="assets/images/internal_page/L_team10.webp" alt="Nurudeen Abubakar">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Nurudeen Abubakar</span>
                                     <span class="thumb-info-type">Vice President, Strategy and Business Development</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Nurudeen Abubakar is a seasoned business and public relations professional from Nigeria with over 25 years of experience in corporate affairs, media...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1116,22 +1156,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team11.webp" alt="Paramveer Singh" />
+                                <img src="assets/images/internal_page/L_team11.webp" alt="Paramveer Singh">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Paramveer Singh</span>
                                     <span class="thumb-info-type">Vice President – Technology Risk Management</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Mr. Paramveer Singh is a seasoned technology risk and cybersecurity strategist with over two decades of experience across cyber governance...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1147,22 +1187,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team12.webp" alt="Partha Roy Chowdhury" />
+                                <img src="assets/images/internal_page/L_team12.webp" alt="Partha Roy Chowdhury">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Partha Roy Chowdhury</span>
-                                    <span class="thumb-info-type">Vice President, Strategy & Sales – Gulf</span>
+                                    <span class="thumb-info-type">Vice President, Strategy &amp; Sales – Gulf</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Partha Roy Chowdhury is a senior management professional with over 30 years of multi-industry leadership experience across the Middle East and India...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1178,22 +1218,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team13.webp" alt="Rajeev Sharad" />
+                                <img src="assets/images/internal_page/L_team13.webp" alt="Rajeev Sharad">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Rajeev Sharad</span>
                                     <span class="thumb-info-type">Vice President – Sales</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Rajeev Sharad serves as Vice President – Sales at IIRIS, bringing over three decades of experience in automation, infrastructure security, traffic management...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1209,22 +1249,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team14.webp" alt="Akash Wigh" />
+                                <img src="assets/images/internal_page/L_team14.webp" alt="Akash Wigh">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Akash Wigh</span>
                                     <span class="thumb-info-type">Assistant Vice President – IntelliRisk</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Akash Wigh serves as Assistant Vice President – IntelliRisk at IIRIS, bringing over nine years of experience across Intellectual Property Rights (IPR) ...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1240,22 +1280,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team15.webp" alt="Col. Praveen Sharma (Retd)" />
+                                <img src="assets/images/internal_page/L_team15.webp" alt="Col. Praveen Sharma (Retd)">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Col. Praveen Sharma (Retd)</span>
                                     <span class="thumb-info-type">Assistant Vice President, IntelliRisk</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Col Praveen Sharma (Retd), a decorated former officer of the Indian Army, is a strategic leader with over two decades of experience spanning risk management...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1271,22 +1311,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team16.webp" alt="Maj Dhrubajit Das (Retd)" />
+                                <img src="assets/images/internal_page/L_team16.webp" alt="Maj Dhrubajit Das (Retd)">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Maj Dhrubajit Das (Retd)</span>
                                     <span class="thumb-info-type">Assistant Vice President, IntelliRisk</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Maj Dhrubajit Das (Retd), a former officer in the Indian Army, is a seasoned security strategist with over 15 years of cross-sectoral experience spanning...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1302,22 +1342,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team17.webp" alt="Gargi Bhardwaj" />
+                                <img src="assets/images/internal_page/L_team17.webp" alt="Gargi Bhardwaj">
+                            </div>
+
+                            <div class="team-content">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Gargi Bhardwaj</span>
-                                    <span class="thumb-info-type">AVP – Marketing & Communications</span>
+                                    <span class="thumb-info-type">AVP – Marketing &amp; Communications</span>
                                 </span>
-                            </div>
-
-                            <div class="team-content">
                                 <p>Gargi Bhardwaj is a seasoned communications expert and marketer with over 13 years of experience in creating compelling brand stories, implementing...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1333,22 +1373,22 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 team-item" data-category="leaders">
-                        <div class="team-card">
+                    <div class="col-lg-4 col-md-6 team-item" data-category="leaders">
+                        <div class="team-card" onclick="window.location.href='https://iirisconsulting.com/team/'" data-bs-toggle="modal" data-bs-target="#team01_Modal">
                             <div class="team-image">
-                                <img src="assets/images/internal_page/L_team18.webp" alt="Sangeeta Singh" />
-                                <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Sangeeta Singh</span>
-                                    <span class="thumb-info-type">Sr. Manager – Q & C</span>
-                                </span>
+                                <img src="assets/images/internal_page/L_team18.webp" alt="Sangeeta Singh">
                             </div>
 
                             <div class="team-content">
-                                <p>Sangeeta Singh leads the Quality & Compliance function at IIRIS, driving the organization’s internal and external audit programs with a focus...</p>
-                                <a href="#" class="learn-more learnMore_01">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Sangeeta Singh</span>
+                                    <span class="thumb-info-type">Sr. Manager – Q &amp; C</span>
+                                </span>
+                                <p>Sangeeta Singh leads the Quality &amp; Compliance function at IIRIS, driving the organization’s internal and external audit programs with a focus...</p>
+                                <!--<a href="#" class="learn-more learnMore_01">
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#198bcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg>
-                                </a>
+                                </a>-->
                                 <div class="team-social">
                                     <a href="#">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1367,8 +1407,8 @@
                 </div>
             </div>
         </section>
-
     </div>
+
 
     <!-- Footer=================Start -->
     <footer class="premium-footer">
@@ -1376,11 +1416,11 @@
         <div class="container position-relative">
             <div class="row g-5 align-items-start">
                 <!-- Brand -->
-                <div class="col-lg-3"> <img src="assets/images/iiris_logo.webp" class="footer-logo mb-4" alt="IIRIS">
+                <div class="col-lg-4"> <img src="assets/images/iiris_logo.webp" class="footer-logo mb-4" alt="IIRIS">
                     <h3 class="brand-title">
                     Global reach.<br> Intelligence-led.<br> Impact that <span>matters.</span> </h3>
                     <p class="brand-text mt-4"> IIRIS empowers organizations with trusted risk intelligence and advisory solutions to navigate uncertainty and build
-                    resilience. </p>
+                    resilience. </p>                    
                     <div class="social-links mt-4"> 
                         <a href="https://www.facebook.com/iirisconsulting/" target="_blank" class="facebook">
                             <svg id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.97 400"><path d="M149.38,63.75c16.09,0,33.28,5,33.28,5l10.31-61.25S171.09,0,118.91,0c-32.03,0-50.63,12.19-64.22,30.16-12.81,17.03-13.28,44.37-13.28,62.03v40.16H0v59.84h41.41v207.81h77.5v-207.81h61.41l4.53-59.84h-65.94v-46.72c0-16.09,14.38-21.88,30.47-21.88Z" style="fill:#198bcf;"/></svg>
@@ -1414,7 +1454,7 @@
                     </ul>
                 </div>
                 <!-- Important -->
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-4">
                     <h6 class="footer-heading">Important Links</h6>
                     <ul class="footer-links">
                     <li><a href="#">Accessibility</a></li>
@@ -1450,7 +1490,7 @@
                     <div class="col-md-3">
                         <div class="contact-item"> 
                             <svg xmlns="http://www.w3.org/2000/svg" width="78" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-                            <div> <small>Headquarters</small> <strong>Unit No. 1105 & 1106, Tower B, “UNITECH CYBER PARK” Sector 39, Gurugram, Haryana 122003</strong> </div>
+                            <div> <small>Headquarters</small> <strong>Unit No. 1105 & 1106, Tower B, Unitech Cyber Park, Sector 39, Gurugram, Haryana 122003</strong> </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -1495,7 +1535,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const filterButtons = document.querySelectorAll(".team-filter-btn");
@@ -1530,5 +1569,15 @@
             });
         });
     </script>
+
+    <!-- <script>
+        document.getElementById("clearFilters").addEventListener("click", function () {
+
+            document.querySelectorAll(".filter-item select").forEach(function (select) {
+                select.selectedIndex = 0;
+            });
+
+        });
+    </script> -->
 </body>
 </html>
