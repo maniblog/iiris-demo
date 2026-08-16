@@ -66,7 +66,7 @@ $(function () {
         },
 
         "Evidence": {
-            icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyNDM0NGQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZWFyY2gtY2hlY2staWNvbiBsdWNpZGUtc2VhcmNoLWNoZWNrIj48cGF0aCBkPSJtOCAxMSAyIDIgNC00Ii8+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCIvPjxwYXRoIGQ9Im0yMSAyMS00LjMtNC4zIi8+PC9zdmc+",
+            icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3e%3cpath d='M5.5,8.5l2,2,4-4' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3ccircle cx='8.5' cy='8.5' r='8' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3cpath d='M18.5,18.5l-4.3-4.3' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3c/svg%3e",
             title: "Evidence",
             text: "Strengthen your legal position with tech-driven forensics, asset tracing, and litigation support.",
             solutions: [
@@ -78,7 +78,7 @@ $(function () {
         },
 
         "Integrity": {
-            icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyNDM0NGQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaGllbGQtY2hlY2staWNvbiBsdWNpZGUtc2hpZWxkLWNoZWNrIj48cGF0aCBkPSJNMjAgMTNjMCA1LTMuNSA3LjUtNy42NiA4Ljk1YTEgMSAwIDAgMS0uNjctLjAxQzcuNSAyMC41IDQgMTggNCAxM1Y2YTEgMSAwIDAgMSAxLTFjMiAwIDQuNS0xLjIgNi4yNC0yLjcyYTEuMTcgMS4xNyAwIDAgMSAxLjUyIDBDMTQuNTEgMy44MSAxNyA1IDE5IDVhMSAxIDAgMCAxIDEgMXoiLz48cGF0aCBkPSJtOSAxMiAyIDIgNC00Ii8+PC9zdmc+",
+            icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27.9 28'%3e%3cpath d='M14,11.33c-1.47,0-2.67,1.19-2.67,2.67,0,1.36-.13,3.35-.35,5.33' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M16.67,15.49c0,3.17,0,8.51-1.33,11.84' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M21.05,26.03c.16-.8.57-3.07.67-4.03' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M.67,14C.67,6.64,6.64.67,14,.67c4.2,0,8.15,1.98,10.67,5.33' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M.67,19.33h.01' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M27.07,19.33c.27-2.67.17-7.14,0-8' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M4.67,24c.67-2,1.33-6,1.33-10,0-.91.15-1.81.45-2.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M9.53,27.33c.28-.88.6-1.76.76-2.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M10,7.07c3.83-2.21,8.72-.9,10.93,2.93.7,1.22,1.07,2.6,1.07,4.01v2.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3c/svg%3e",
             title: "Integrity",
             text: "Safeguard enterprise value through rigorous financial diligence, forensic audit, and compliance reviews.",
             solutions: [ 
@@ -91,7 +91,7 @@ $(function () {
         },
 
         "De-risk_Security": {
-            icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyNDM0NGQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaGllbGQtaWNvbiBsdWNpZGUtc2hpZWxkIj48cGF0aCBkPSJNMjAgMTNjMCA1LTMuNSA3LjUtNy42NiA4Ljk1YTEgMSAwIDAgMS0uNjctLjAxQzcuNSAyMC41IDQgMTggNCAxM1Y2YTEgMSAwIDAgMSAxLTFjMiAwIDQuNS0xLjIgNi4yNC0yLjcyYTEuMTcgMS4xNyAwIDAgMSAxLjUyIDBDMTQuNTEgMy44MSAxNyA1IDE5IDVhMSAxIDAgMCAxIDEgMXoiLz48L3N2Zz4=",
+            icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 21'%3e%3cpath d='M16.5,11.5c0,5-3.5,7.5-7.66,8.95-.22.07-.45.07-.67-.01-4.17-1.44-7.67-3.94-7.67-8.94v-7c0-.55.45-1,1-1,2,0,4.5-1.2,6.24-2.72.44-.37,1.08-.37,1.52,0,1.75,1.53,4.24,2.72,6.24,2.72.55,0,1,.45,1,1v7Z' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3c/svg%3e",
             title: "De-risk_Security",
             text: "Build a secure, compliant, and capable workforce through trusted hiring and ethical incident management.",
             solutions: [
@@ -111,7 +111,7 @@ $(function () {
         },
 
         "Embeds": {
-            icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyNDM0NGQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2Vycy1pY29uIGx1Y2lkZS11c2VycyI+PHBhdGggZD0iTTE2IDIxdi0yYTQgNCAwIDAgMC00LTRINmE0IDQgMCAwIDAtNCA0djIiLz48cGF0aCBkPSJNMTYgMy4xMjhhNCA0IDAgMCAxIDAgNy43NDQiLz48cGF0aCBkPSJNMjIgMjF2LTJhNCA0IDAgMCAwLTMtMy44NyIvPjxjaXJjbGUgY3g9IjkiIGN5PSI3IiByPSI0Ii8+PC9zdmc+",
+            icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 19'%3e%3cpath d='M14.5,18.5v-2c0-2.21-1.79-4-4-4h-6c-2.21,0-4,1.79-4,4v2' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3cpath d='M14.5.63c2.14.55,3.42,2.74,2.87,4.88-.36,1.41-1.46,2.5-2.87,2.87' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3cpath d='M20.5,18.5v-2c0-1.82-1.24-3.41-3-3.87' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3ccircle cx='7.5' cy='4.5' r='4' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3c/svg%3e",
             title: "Embeds",
             text: "Scale your security and risk operations instantly with highly trained, vetted professionals.",
             solutions: [
@@ -131,7 +131,7 @@ $(function () {
         },
 
         "Response": {
-            icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyNDM0NGQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaXJlbi1pY29uIGx1Y2lkZS1zaXJlbiI+PHBhdGggZD0iTTcgMTh2LTZhNSA1IDAgMSAxIDEwIDB2NiIvPjxwYXRoIGQ9Ik01IDIxYTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtMWEyIDIgMCAwIDAtMi0ySDdhMiAyIDAgMCAwLTIgMnoiLz48cGF0aCBkPSJNMjEgMTJoMSIvPjxwYXRoIGQ9Ik0xOC41IDQuNSAxOCA1Ii8+PHBhdGggZD0iTTIgMTJoMSIvPjxwYXRoIGQ9Ik0xMiAydjEiLz48cGF0aCBkPSJtNC45MjkgNC45MjkuNzA3LjcwNyIvPjxwYXRoIGQ9Ik0xMiAxMnY2Ii8+PC9zdmc+",
+            icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28.07 28.13'%3e%3cpath d='M4.57,19.6C-.63,14.4-.63,5.87,4.57.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M8.43,4.4c-2.6,2.7-3.04,6.82-1.07,10' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3ccircle cx='14.03' cy='10.13' r='2.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M19.63,4.53c2.67,2.67,3.01,6.81,1.07,9.96' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M23.5.67c5.19,5.18,5.2,13.59.02,18.78,0,0-.01.01-.02.02' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M10.7,22.13h6.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3cpath d='M8.7,27.47l5.33-14.67,5.33,14.67' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.33px;'/%3e%3c/svg%3e",
             title: "Response",
             text: "Navigate critical incidents with immediate, intelligence-backed tactical intervention anywhere in the world.",
             solutions: [
