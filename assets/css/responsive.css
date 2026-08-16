@@ -244,6 +244,15 @@
   .job-meta span { display: block;}
   #jobsCount { text-align: center;}
 
+  .bread-wrap.trail-items {padding-top: 7px; font-size: 12px;}
+  .serv_imgArea { height: 250px;}
+  .serv_imgLink {min-height: 250px !important}
+  .iiris-service-main h3 {font-size: 18px;}
+  .iiris-service-intro {font-size: 13px !important;}
+  .serv_conArea h1 {font-size: 18px;}
+  .iiris-service-main p {font-size: 13px;}
+  .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
+
 }
 
 
@@ -499,6 +508,15 @@
   .life-card { height: auto;}
   .job-meta span { display: block;}
   #jobsCount { text-align: center;}
+
+  .bread-wrap.trail-items {padding-top: 7px; font-size: 12px;}
+  .serv_imgArea { height: 250px;}
+  .serv_imgLink {min-height: 250px !important}
+  .iiris-service-main h3 {font-size: 18px;}
+  .iiris-service-intro {font-size: 13px !important;}
+  .serv_conArea h1 {font-size: 18px;}
+  .iiris-service-main p {font-size: 13px;}
+  .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
   
 }
 
@@ -755,6 +773,15 @@
   .life-card { height: auto;}
   .job-meta span { display: block;}
   #jobsCount { text-align: center;}
+
+  .bread-wrap.trail-items {padding-top: 7px; font-size: 12px;}
+  .serv_imgArea { height: 250px;}
+  .serv_imgLink {min-height: 250px !important}
+  .iiris-service-main h3 {font-size: 18px;}
+  .iiris-service-intro {font-size: 13px !important;}
+  .serv_conArea h1 {font-size: 18px;}
+  .iiris-service-main p {font-size: 13px;}
+  .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
   
 }
 
