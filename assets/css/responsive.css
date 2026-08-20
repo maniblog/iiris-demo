@@ -253,6 +253,10 @@
   .iiris-service-main p {font-size: 13px;}
   .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
 
+  .iiris-article-card-new{display: block;}
+  .iiris-article-image-new {width: 100%;max-width: 100%; min-width: 100%;}
+  .iiris-articles-side-new { margin-top: 0; }
+
 }
 
 
@@ -517,6 +521,10 @@
   .serv_conArea h1 {font-size: 18px;}
   .iiris-service-main p {font-size: 13px;}
   .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
+
+  .iiris-article-card-new{display: block;}
+  .iiris-article-image-new {width: 100%;max-width: 100%; min-width: 100%;}
+  .iiris-articles-side-new { margin-top: 0; }
   
 }
 
@@ -782,6 +790,10 @@
   .serv_conArea h1 {font-size: 18px;}
   .iiris-service-main p {font-size: 13px;}
   .iiris-faq-question {font-size: 14px; padding: 9px 15px;}
+
+  .iiris-article-card-new{display: block;}
+  .iiris-article-image-new {width: 100%;max-width: 100%; min-width: 100%;}
+  .iiris-articles-side-new { margin-top: 0; }
   
 }
 
@@ -884,6 +896,13 @@
   .nav-tabs_02 .nav-link {padding: 14px 2px !important;}
   .leader_adv {min-width: 80%;}
   .thumb-info-title {font-size: 20px; height: 80px; display: block;}
+
+  .iiris-feature-content-new h2 {font-size: 15px;line-height: 1.5; font-weight: 500;}
+  .iiris-feature-content-new p {margin: 25px 0;  font-size: 13px;}
+  .iiris-feature-content-new {padding: 20px;}
+  .iiris-article-tab-new {padding: 6px 11px; font-size: 12px; font-weight: 400;}
+  .iiris-article-body-new h3 { font-size: 14px;}
+  .iiris-article-body-new p {margin: 10px 0 15px; font-size: 13px;}
 }
 
 /* Large Tablets / Small Laptops */
