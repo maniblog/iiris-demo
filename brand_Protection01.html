@@ -595,7 +595,6 @@
         document.addEventListener("DOMContentLoaded", function() {
         const slider = document.querySelector(".services-slider");
         if (!slider) return;
-
         const track = slider.querySelector(".services-track");
         const cards = Array.from(track.querySelectorAll(".service-card"));
         const prev = slider.querySelector(".slider-prev");
@@ -603,311 +602,325 @@
         const dotsContainer = slider.parentElement.querySelector(".slider-dots");
         const currentSlide = slider.parentElement.querySelector(".current-slide");
         const totalSlide = slider.parentElement.querySelector(".total-slide");
-
-        if (!track || !cards.length) return;
-
-        let currentPage = 0;
+        let currentPage = 0; // ab yeh "page" nahi, "current card index" hai
         let pages = 1;
-        let isDragging = false;
-        let startX = 0;
-        let startScrollLeft = 0;
-        let hasDragged = false;
 
         function getVisibleCards() {
-            const containerWidth = slider.clientWidth;
-            const cardWidth = cards[0].offsetWidth;
-            const gap = parseFloat(getComputedStyle(track).gap) || 0;
-
-            if (!cardWidth) return 1;
-
-            return Math.max(
-                1,
-                Math.floor((containerWidth + gap) / (cardWidth + gap))
-            );
-        }
-
-        function canSlide() {
-            return track.scrollWidth > slider.clientWidth + 2;
-        }
-
-        function showControls() {
-            const shouldShow = canSlide();
-
-            if (prev) {
-                prev.style.display = shouldShow ? "" : "none";
-            }
-
-            if (next) {
-                next.style.display = shouldShow ? "" : "none";
-            }
-
-            if (dotsContainer) {
-                dotsContainer.style.display = shouldShow ? "" : "none";
-            }
-
-            if (!shouldShow) {
-                currentPage = 0;
-
-                if (currentSlide) {
-                    currentSlide.textContent = "01";
-                }
-
-                if (totalSlide) {
-                    totalSlide.textContent = "01";
-                }
-            }
+            if (window.innerWidth <= 640) return 1;
+            if (window.innerWidth <= 991) return 2;
+            if (window.innerWidth <= 1250) return 3;
+            return 1;
         }
 
         function createDots() {
             const visible = getVisibleCards();
-
-            pages = Math.max(
-                1,
-                cards.length - visible + 1
-            );
-
-            if (currentPage >= pages) {
-                currentPage = pages - 1;
-            }
-
-            if (!dotsContainer) {
-                showControls();
-                return;
-            }
-
+            // pages = kitne "stop points" hain jaha se ek card visible hone lagta hai
+            // (last group ke baad khali scroll na ho isliye cards.length - visible + 1)
+            pages = Math.max(1, cards.length - visible + 1);
             dotsContainer.innerHTML = "";
-
             for (let i = 0; i < pages; i++) {
                 const dot = document.createElement("button");
-
                 dot.type = "button";
                 dot.className = "slider-dot";
-                dot.setAttribute(
-                    "aria-label",
-                    "Go to slide " + (i + 1)
-                );
-
+                dot.setAttribute("aria-label", "Go to slide " + (i + 1));
                 dot.addEventListener("click", function() {
                     goToPage(i);
                 });
-
                 dotsContainer.appendChild(dot);
             }
-
+            if (currentPage >= pages) {
+                currentPage = pages - 1;
+            }
             updateSlider();
-            showControls();
-        }
-
-        function getCardStep() {
-            if (!cards[0]) return 0;
-
-            const cardWidth = cards[0].offsetWidth;
-            const gap = parseFloat(
-                getComputedStyle(track).gap
-            ) || 0;
-
-            return cardWidth + gap;
         }
 
         function goToPage(page) {
-            currentPage = Math.max(
-                0,
-                Math.min(page, pages - 1)
-            );
-
-            updateSlider(true);
+            currentPage = Math.max(0, Math.min(page, pages - 1));
+            updateSlider();
         }
 
-        function updateSlider(smooth = true) {
-            const moveAmount = getCardStep() * currentPage;
-
+        function updateSlider() {
+            const cardWidth = cards[0].offsetWidth;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            // har click pe sirf EK card jitna move karo, "visible" se multiply nahi
+            const moveAmount = (cardWidth + gap) * currentPage;
             track.scrollTo({
                 left: moveAmount,
-                behavior: smooth ? "smooth" : "auto"
+                behavior: "smooth"
             });
-
-            updateUI();
-        }
-
-        function updateUI() {
-            const dots = dotsContainer
-                ? dotsContainer.querySelectorAll(".slider-dot")
-                : [];
-
-            dots.forEach(function(dot, index) {
-                dot.classList.toggle(
-                    "active",
-                    index === currentPage
-                );
+            const dots = dotsContainer.querySelectorAll(".slider-dot");
+            dots.forEach((dot, index) => {
+                dot.classList.toggle("active", index === currentPage);
             });
-
-            if (currentSlide) {
-                currentSlide.textContent = String(
-                    currentPage + 1
-                ).padStart(2, "0");
-            }
-
-            if (totalSlide) {
-                totalSlide.textContent = String(
-                    pages
-                ).padStart(2, "0");
-            }
-
-            if (prev) {
-                prev.disabled = currentPage === 0;
-            }
-
-            if (next) {
-                next.disabled = currentPage === pages - 1;
-            }
+            currentSlide.textContent = String(currentPage + 1).padStart(2, "0");
+            totalSlide.textContent = String(pages).padStart(2, "0");
+            prev.disabled = currentPage === 0;
+            next.disabled = currentPage === pages - 1;
         }
-
-        function getNearestPage() {
-            const step = getCardStep();
-
-            if (!step) return 0;
-
-            let page = Math.round(
-                track.scrollLeft / step
-            );
-
-            page = Math.max(
-                0,
-                Math.min(page, pages - 1)
-            );
-
-            return page;
-        }
-
-        function syncAfterDrag() {
-            currentPage = getNearestPage();
-            updateUI();
-        }
-
         prev.addEventListener("click", function() {
-            if (isDragging) return;
             goToPage(currentPage - 1);
         });
-
         next.addEventListener("click", function() {
-            if (isDragging) return;
             goToPage(currentPage + 1);
         });
-
-        track.addEventListener("scroll", function() {
-            if (!isDragging) {
-                const newPage = getNearestPage();
-
-                if (newPage !== currentPage) {
-                    currentPage = newPage;
-                    updateUI();
-                }
-            }
-        });
-
-        track.addEventListener("mousedown", function(e) {
-            if (!canSlide()) return;
-
-            isDragging = true;
-            hasDragged = false;
-
-            startX = e.pageX;
-            startScrollLeft = track.scrollLeft;
-
-            track.classList.add("is-dragging");
-        });
-
-        window.addEventListener("mousemove", function(e) {
-            if (!isDragging) return;
-
-            const distance = e.pageX - startX;
-
-            if (Math.abs(distance) > 5) {
-                hasDragged = true;
-            }
-
-            track.scrollLeft = startScrollLeft - distance;
-        });
-
-        window.addEventListener("mouseup", function() {
-            if (!isDragging) return;
-
-            isDragging = false;
-
-            track.classList.remove("is-dragging");
-
-            if (hasDragged) {
-                syncAfterDrag();
-            }
-        });
-
-        track.addEventListener("touchstart", function(e) {
-            if (!canSlide()) return;
-
-            startX = e.touches[0].pageX;
-            startScrollLeft = track.scrollLeft;
-            hasDragged = false;
-        }, {
-            passive: true
-        });
-
-        track.addEventListener("touchmove", function(e) {
-            if (!canSlide()) return;
-
-            const distance =
-                e.touches[0].pageX - startX;
-
-            if (Math.abs(distance) > 5) {
-                hasDragged = true;
-            }
-        }, {
-            passive: true
-        });
-
-        track.addEventListener("touchend", function() {
-            if (!hasDragged) return;
-
-            syncAfterDrag();
-        });
-
-        track.addEventListener("click", function(e) {
-            if (hasDragged) {
-                e.preventDefault();
-                e.stopPropagation();
-                hasDragged = false;
-            }
-        }, true);
-
         let resizeTimer;
-
         window.addEventListener("resize", function() {
             clearTimeout(resizeTimer);
-
             resizeTimer = setTimeout(function() {
                 createDots();
-                updateSlider(false);
-                showControls();
             }, 150);
         });
-
         createDots();
-        updateSlider(false);
-        showControls();
-    });
-    </script>    
-
-    <script>
-        const overlay = document.querySelector(".search-overlay");
-        document.querySelector(".open-search").addEventListener("click", function(e){
-            e.preventDefault();
-            overlay.classList.add("active");
-            document.querySelector(".search-box input").focus();
-        });
-
-        document.querySelector(".close-search").addEventListener("click", function(){
-            overlay.classList.remove("active");
         });
     </script>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const stage = document.getElementById("suiteStage");
+
+            const rings = document.querySelectorAll(".suite-ring");
+            const curves = document.querySelectorAll(".suite-curved-text");
+            const orbits = document.querySelectorAll(".suite-orbit");
+
+            let mouseX = 0;
+            let mouseY = 0;
+            let targetX = 0;
+            let targetY = 0;
+
+            /*
+            ============================================
+            MOUSE PARALLAX
+            ============================================
+            */
+
+            stage.addEventListener("mousemove", function(e) {
+
+                const rect = stage.getBoundingClientRect();
+
+                mouseX = (e.clientX - rect.left) / rect.width - 0.5;
+                mouseY = (e.clientY - rect.top) / rect.height - 0.5;
+
+            });
+
+            stage.addEventListener("mouseleave", function() {
+
+                mouseX = 0;
+                mouseY = 0;
+
+            });
+
+
+            /*
+            ============================================
+            SMOOTH PARALLAX ANIMATION
+            ============================================
+            */
+
+            function animateParallax() {
+
+                targetX += (mouseX - targetX) * 0.08;
+                targetY += (mouseY - targetY) * 0.08;
+
+                const isMobile = window.innerWidth <= 800;
+
+                if (!isMobile) {
+
+                    rings.forEach(function(ring) {
+
+                        const speed =
+                            parseFloat(ring.dataset.speed) || 1;
+
+                        const x = targetX * 20 * speed;
+                        const y = targetY * 14 * speed;
+
+                        ring.style.transform =
+                            `translate3d(${x}px, calc(-50% + ${y}px), 0)`;
+                    });
+
+                    curves.forEach(function(curve, index) {
+
+                        const speed = 0.45 + (index * 0.15);
+
+                        const x = targetX * 12 * speed;
+                        const y = targetY * 8 * speed;
+
+                        curve.style.transform =
+                            `translate3d(${x}px, calc(-50% + ${y}px), 0)`;
+                    });
+
+                    orbits.forEach(function(orbit, index) {
+
+                        const speed = 0.3 + (index * 0.08);
+
+                        const x = targetX * 9 * speed;
+                        const y = targetY * 6 * speed;
+
+                        orbit.style.transform =
+                            `translate3d(${x}px, calc(-50% + ${y}px), 0)`;
+                    });
+                }
+
+                requestAnimationFrame(animateParallax);
+            }
+
+            animateParallax();
+
+
+            /*
+            ============================================
+            HOVER DEPTH
+            ============================================
+            */
+
+            rings.forEach(function(ring) {
+
+                ring.addEventListener("mouseenter", function() {
+
+                    if (window.innerWidth > 800) {
+
+                        ring.style.filter =
+                            "brightness(1.06) drop-shadow(0 20px 35px rgba(40,70,180,.18))";
+
+                    }
+
+                });
+
+                ring.addEventListener("mouseleave", function() {
+
+                    ring.style.filter = "";
+
+                });
+
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const section = document.getElementById("connectSection");
+            const container = document.getElementById("connectContainer");
+            const imageWrap = document.getElementById("connectImageWrap");
+            const image = document.getElementById("connectImage");
+            const bgGlow = document.getElementById("connectBgGlow");
+            const bgShape = document.getElementById("connectBgShape");
+
+            let targetX = 0;
+            let targetY = 0;
+            let currentX = 0;
+            let currentY = 0;
+
+            section.addEventListener("mousemove", function (event) {
+
+                const rect = section.getBoundingClientRect();
+
+                targetX = ((event.clientX - rect.left) / rect.width - 0.5);
+                targetY = ((event.clientY - rect.top) / rect.height - 0.5);
+
+            });
+
+            section.addEventListener("mouseleave", function () {
+
+                targetX = 0;
+                targetY = 0;
+
+            });
+
+            function animateParallax() {
+
+                currentX += (targetX - currentX) * 0.06;
+                currentY += (targetY - currentY) * 0.06;
+
+                if (window.innerWidth > 850) {
+
+                    const imageX = currentX * 12;
+                    const imageY = currentY * 8;
+
+                    image.style.transform =
+                        "scale(1.07) translate3d(" +
+                        imageX +
+                        "px, " +
+                        imageY +
+                        "px, 0)";
+
+                    const glowX = currentX * 55;
+                    const glowY = currentY * 40;
+
+                    bgGlow.style.transform =
+                        "translate(calc(-50% + " +
+                        glowX +
+                        "px), calc(-50% + " +
+                        glowY +
+                        "px))";
+
+                    const shapeX = currentX * -35;
+                    const shapeY = currentY * -25;
+
+                    bgShape.style.transform =
+                        "translate3d(" +
+                        shapeX +
+                        "px, " +
+                        shapeY +
+                        "px, 0)";
+
+                    const containerX = currentX * 3;
+                    const containerY = currentY * 2;
+
+                    container.style.transform =
+                        "translate3d(" +
+                        containerX +
+                        "px, " +
+                        containerY +
+                        "px, 0)";
+                }
+
+                requestAnimationFrame(animateParallax);
+            }
+
+            animateParallax();
+
+            imageWrap.addEventListener("mouseenter", function () {
+                image.style.filter = "saturate(1.06) contrast(1.03)";
+            });
+
+            imageWrap.addEventListener("mouseleave", function () {
+                image.style.filter = "";
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            if (typeof lucide !== "undefined") {
+                lucide.createIcons();
+            }
+
+            const faqItems = document.querySelectorAll(".iiris-faq-item");
+
+            faqItems.forEach(function (item) {
+
+                const button = item.querySelector(".iiris-faq-question");
+
+                button.addEventListener("click", function () {
+
+                    const isActive = item.classList.contains("active");
+
+                    faqItems.forEach(function (faq) {
+                        faq.classList.remove("active");
+                    });
+
+                    if (!isActive) {
+                        item.classList.add("active");
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
 </body>
 </html>
