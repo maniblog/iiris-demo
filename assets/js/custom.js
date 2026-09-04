@@ -265,7 +265,7 @@ $(function () {
 
     // Click Event
 
-    $(".wheel-item").on("click", function () {
+    /*$(".wheel-item").on("click", function () {
         $(".wheel-item").removeClass("active");
         $(this).addClass("active");
         const title = $(this).data("title"); 
@@ -288,7 +288,58 @@ $(function () {
 
 
         });
-    });
+    });*/
+
+    let selectedWheelItem = $(".wheel-item.active").first();
+
+        function showWheelData($item, setActive = true) {
+            if (setActive) {
+                $(".wheel-item").removeClass("active");
+                $item.addClass("active");
+            }
+
+            const title = $item.data("title");
+            const data = wheelData[title];
+
+            if (!data) return;
+
+            $(".content-box").stop(true, true).fadeOut(100, function () {
+                $("#contentIcon").attr("src", data.icon);
+                $("#contentTitle").text(data.title);
+                $("#contentText").text(data.text);
+
+                updateSolutions(data);
+
+                $(this).fadeIn(200);
+
+                if (typeof lucide !== "undefined") {
+                    lucide.createIcons();
+                }
+            });
+        }
+
+        $(".wheel-item").on("click", function () {
+            selectedWheelItem = $(this);
+            showWheelData($(this), true);
+        });
+
+        $(".wheel-item").on("mouseenter", function () {
+            showWheelData($(this), false);
+
+            $(this).css({
+                transform: "scale(1.08)"
+            });
+        });
+
+        $(".wheel-item").on("mouseleave", function () {
+            $(this).css({
+                transform: "scale(1)"
+            });
+
+            if (selectedWheelItem.length) {
+                showWheelData(selectedWheelItem, false);
+            }
+        });
 
     // Accordian tab Click
 
