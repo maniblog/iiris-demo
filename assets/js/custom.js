@@ -151,7 +151,7 @@ $(function () {
 
         "De-risk_Security": {
             icon: "data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 21'%3e%3cpath d='M16.5,11.5c0,5-3.5,7.5-7.66,8.95-.22.07-.45.07-.67-.01-4.17-1.44-7.67-3.94-7.67-8.94v-7c0-.55.45-1,1-1,2,0,4.5-1.2,6.24-2.72.44-.37,1.08-.37,1.52,0,1.75,1.53,4.24,2.72,6.24,2.72.55,0,1,.45,1,1v7Z' style='fill:none; stroke:%23000; stroke-linecap:round; stroke-linejoin:round;'/%3e%3c/svg%3e",
-            title: "De-risk_Security",
+            title: "De-risk Security",
             text: "Build a secure, compliant, and capable workforce through trusted hiring and ethical incident management.",
             solutions: [
                 {
