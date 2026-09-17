@@ -680,7 +680,8 @@ Manifesto
 }
 
 .cta-content h2 span {
-    color: #198bcf;
+    /* color: #198bcf; */
+    color: #4abbff;
 }
 
 .cta-content p {

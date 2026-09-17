@@ -8280,7 +8280,7 @@ RESPONSIVE
     align-items: center;
     gap: 9px;
     color: var(--iiris-dark_newBlog);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
@@ -8297,7 +8297,7 @@ RESPONSIVE
     margin: 0;
     text-align: center;
     color: #71818d;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .iiris-intelligence-footer-arrow_newBlog {
