@@ -18716,7 +18716,9 @@ body.videoModalOpen {
     padding: 20px;
     border-radius: 16px;
     background: #101d32;
-    background: linear-gradient(#284169, #3f74ba);
+    /* background: linear-gradient(#284169, #3f74ba); */
+    background: linear-gradient(#dadada, #cee1f1)
+    
 }
 
 .security-visual-mbs svg {
@@ -18728,22 +18730,23 @@ body.videoModalOpen {
 
 .security-visual-mbs .diagram-label-mbs {
     fill: #e8edf5;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .security-visual-mbs .diagram-small-mbs {
-    fill: #aab8ca;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
+    fill: #fff;
+    font-size: 13px;
+}
+.security-visual-mbs .diagram-small-mbs01 {
+    fill: #243b5e;
+    font-size: 13px;
 }
 
 .security-visual-mbs .diagram-heading-mbs {
     fill: #aab8ca;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     letter-spacing: 1.4px;
 }
 
